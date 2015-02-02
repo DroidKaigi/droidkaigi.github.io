@@ -40,7 +40,7 @@
 }
 
 .dk-cfp-btn {
-  margin-left: 10px;
+  padding-left: 10px;
 }
 
 .dk-gmap {
@@ -116,6 +116,9 @@
   .dk-gmap {
     width: 290px;
     height: 290px;
+  }
+  .dk-cfp-btn {
+    text-align: center;
   }
 }
 
