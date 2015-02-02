@@ -43,6 +43,11 @@
   margin-left: 10px;
 }
 
+.dk-gmap {
+  width: 600px;
+  height: 400px;
+}
+
 .dk-font-roboto {
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -107,6 +112,10 @@
   }
   h3 {
     font-size: 18px;
+  }
+  .dk-gmap {
+    width: 290px;
+    height: 290px;
   }
 }
 
