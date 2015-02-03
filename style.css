@@ -1,0 +1,164 @@
+/* 
+ * Roboto Condensed
+ * Christian Robertson
+ * Apache License, version 2.0
+ * http://www.google.com/fonts/specimen/Roboto+Condensed
+ */
+@import url(//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
+
+.dk-section {
+  padding: 15px 30px;
+}
+
+.dk-section h2 {
+  border-bottom: 1px solid #8BC34A;
+  border-left: 5px solid #8BC34A;
+  padding: 1px 5px;
+  font-weight: bold;
+}
+
+.dk-section h3 {
+  border-bottom: 1px dotted #8BC34A;
+  padding: 1px;
+  margin: 20px 10px 10px;
+  font-weight: bold;
+}
+
+.dk-section p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.dk-section dl {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.dk-topic p {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.dk-cfp-btn {
+  padding-left: 10px;
+}
+
+.dk-gmap {
+  width: 600px;
+  height: 400px;
+}
+
+.dk-font-roboto {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.dk-header {
+  background: #8BC34A;
+  color: white;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.dk-header h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+.dk-nav {
+  margin-top: 10px;
+}
+.dk-nav a {
+  color: white;
+}
+.dk-nav li:after {
+  content: "　/";
+}
+.dk-nav li:last-child {
+  padding-right: 0;
+}
+.dk-nav li:last-child:after {
+  content: "";
+}
+
+.dk-jumbotron h1 {
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.dk-jumbotron p {
+  font-weight: lighter;
+  font-size: 30px;
+}
+
+@media (min-width: 768px) {
+  .dk-jumbotron {
+    margin-top: 50px;
+  }
+  .dk-jumbotron h1 {
+    font-size: 80px;
+  }
+  .dk-jumbotron p {
+    font-size: 36px;
+  }
+}
+
+.dk-eyecatch {
+  height: 300px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .dk-nav li {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .dk-nav li:after {
+    content: " /";
+    margin: 0 4px;
+  }
+  .dk-nav li:last-child:after {
+    margin: 0;
+  }
+  .dk-socials {
+    min-height: 55px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .dk-gmap {
+    width: 290px;
+    height: 290px;
+  }
+  .dk-cfp-btn {
+    text-align: center;
+  }
+}
+
+.dk-faq-q {
+  list-style: none;
+  text-indent: -1.3em;
+}
+.dk-faq-q:before {
+  content: "Q: ";
+  font-family: monospace;
+}
+.dk-faq-a {
+  list-style: none;
+  text-indent: -1.3em;
+  margin-bottom: 1em;
+}
+.dk-faq-a:before {
+  content: "A: ";
+  font-family: monospace;
+}
+
+.dk-shadow {
+  -webkit-box-shadow: 0 1px 6px rgba(0,0,0,.35);
+          box-shadow: 0 1px 6px rgba(0,0,0,.35);
+}
+
+footer {
+  background-color: #f5f5f5;
+}
