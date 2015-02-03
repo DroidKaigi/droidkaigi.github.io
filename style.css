@@ -72,7 +72,10 @@
 .dk-nav li:after {
   content: "　/";
 }
-.dk-nav li:last-child:after{
+.dk-nav li:last-child {
+  padding-right: 0;
+}
+.dk-nav li:last-child:after {
   content: "";
 }
 
@@ -104,6 +107,17 @@
 }
 
 @media (max-width: 768px) {
+  .dk-nav li {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .dk-nav li:after {
+    content: " /";
+    margin: 0 4px;
+  }
+  .dk-nav li:last-child:after {
+    margin: 0;
+  }
   .dk-socials {
     min-height: 55px;
   }
