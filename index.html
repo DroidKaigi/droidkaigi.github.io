@@ -21,6 +21,8 @@
   <link rel="shortcut icon" href="img/favicon.png">
 
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.2/css/ripples.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.2/css/material-wfont.min.css">
   <link rel="stylesheet" href="style.css">
   <!--[if lt IE 9]>
     <script src="//oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
@@ -47,7 +49,7 @@
         <div class="dk-font-roboto dk-jumbotron">
           <h1><a href="#">DroidKaigi</a></h1>
           <p>2015/04/25 (Sat)</p>
-          <p><a class="btn btn-default btn-lg dk-shadow" href="#cfp" role="button">Call For Papers</a></p>
+          <p><a class="btn btn-primary btn-lg dk-shadow" href="#cfp" role="button">Call For Papers</a></p>
         </div>
       </div>
       <div class="col-sm-5 col-md-4 col-lg-3">
@@ -288,6 +290,13 @@
 
   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.2/js/ripples.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.2/js/material.min.js"></script>
+  <script>
+    $(document).ready(function() {
+       $.material.init();
+    });
+  </script>
   <script src="script.js"></script>
 
 </body>
