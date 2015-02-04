@@ -3,3 +3,5 @@ Thumbs.db
 Gemfile
 Gemfile.lock
 _site/
+vendor/
+.bundle
