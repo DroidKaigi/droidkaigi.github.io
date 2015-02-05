@@ -8,7 +8,10 @@ $(function(){
 
   // history state
   var history = window.history;
-  $("a[href^=#],a[href=#]").click(function(){
+  $("a[href^=#],a[href=#]").click(function(event){
+    if (event.which != 1 || event.metaKey) {
+      return; // Middle click and Ctrl+click should not be overridden.
+    }
     var offset = this.hash ? $(this.hash).offset().top : 0;
     $("html,body").animate({scrollTop: offset}, 250);
     if (history.pushState) {
