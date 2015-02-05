@@ -1,2 +1,5 @@
+# vendor/の下のファイルがJekyllで処理できずエラーになるので除外
+exclude: ['vendor']
+
 gems:
   - jekyll-sitemap
