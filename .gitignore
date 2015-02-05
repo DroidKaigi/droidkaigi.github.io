@@ -1,5 +1,6 @@
 .DS_Store
 Thumbs.db
-Gemfile
 Gemfile.lock
 _site/
+vendor/
+.bundle
