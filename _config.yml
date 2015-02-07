@@ -1,5 +1,5 @@
 # vendor/の下のファイルがJekyllで処理できずエラーになるので除外
-exclude: ['vendor']
+exclude: ['vendor', 'Gemfile', 'Gemfile.lock', 'README.md']
 
 gems:
   - jekyll-sitemap
