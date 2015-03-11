@@ -113,7 +113,7 @@
   }
   .dk-nav li:after {
     content: " /";
-    margin: 0 4px;
+    margin: 0 1px 0 1px;
   }
   .dk-nav li:last-child:after {
     margin: 0;
