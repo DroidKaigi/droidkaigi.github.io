@@ -41,7 +41,7 @@
       <ul class="dk-nav list-inline">
         <li><a href="#details">Details</a></li>
         <li><a href="#date">Date</a></li>
-        <li><a href="#cfp">CFP</a></li>
+        <li><a href="#sessions">Sessions</a></li>
         <li><a href="#registration">Registration</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
@@ -52,7 +52,7 @@
         <div class="dk-font-roboto dk-jumbotron">
           <h1><a href="#">DroidKaigi</a></h1>
           <p>2015/04/25 (Sat)</p>
-          <p><a class="btn btn-default btn-lg dk-shadow" href="#cfp" role="button">Call For Papers</a></p>
+          <p><a class="btn btn-default btn-lg dk-shadow" href="#sessions" role="button">Sessions</a></p>
         </div>
       </div>
       <div class="col-sm-5 col-md-4 col-lg-3">
@@ -112,6 +112,8 @@
   <div id="cfp" class="row">
     <h2>Call For Papers</h2>
     <!-- callforpapersここから -->
+    <p>CFPの募集は終了しています。<br class="visible-xs-inline"><a data-toggle="collapse" href=".dk-collapsable_cfp">詳細の表示/非表示</a></p>
+<div class="dk-collapsable_cfp collapse">
     <p>DroidKaigi の演題を募集します。応募に関してご不明な点がありましたら、DroidKaigi 実行委員会までご連絡ください。</p>
     <p>応募されたトークは<a href="https://docs.google.com/spreadsheets/d/186-gpTHPvGwtQTFqvuSs10Tz3ca49gKNZ7uoRSi2HnE/edit?usp=sharing">DroidKaigi 2015 応募されたトーク一覧</a>で公開しています。応募時の参考にしてください。</p>
     <p>みなさまからのご応募をお待ちしております。</p>
@@ -251,20 +253,131 @@
     見通しの悪くなったソースコードをどのように分析し、対応していけばいいか、という観点でパターンの分類を行い、改善前と後でソースコードを見比べつつ、問題点と改善点を紹介していきます。<br>
     自らの開発経験を踏まえて、修正のタイミング、リファクタリング前後のテスト方針など落とし穴の防ぎ方が共有できればと考えています。<br>
     特に聞いて欲しい対象は、初級者です。また複数人がアプリケーション開発を行うプロジェクトでは中級者、上級者であっても設計方針、レビューポイントの策定に役立つと想像しています</p>
-
+</div>
     <!-- callforpapersここまで -->
   </div>
+
+  <div id="sessions" class="row">
+    <h2>セッション</h2>
+    <p>採択されたセッションの一覧（順不同）です。タイムテーブルの発表は、もうしばらくお待ち下さい。</p>
+    <p>（２セッションを並行実施する予定ですがセッションルームの収容人数に差があるため、調整に時間がかかっています）</p>
+    <p>以下セッションの詳細については、<a href="https://docs.google.com/spreadsheets/d/186-gpTHPvGwtQTFqvuSs10Tz3ca49gKNZ7uoRSi2HnE/edit?usp=sharing">DroidKaigi 2015 応募されたトーク一覧</a>もご覧ください。</p>
+    <dl>
+      <dt>開発環境・ツール（Productivity and Tooling）</dt>
+      <dd>
+        <ul class="dk-session_list">
+          <li>僕らのデータ同期プラクティス
+              <span class="small dk-session_time">25分</span>
+              <span class="dk-speaker">Nkzn</span>
+          <li>初学者に嬉しいAndroid開発環境
+              <span class="small dk-session_time">25分</span>
+              <span class="dk-speaker">hkusu</span>
+          <li>新言語KotlinでAndroidプログラミング
+              <span class="small dk-session_time">25分</span>
+              <span class="dk-speaker">長澤 太郎 (@ngsw_taro)</span>
+          <li>つかえるGradleプロジェクトの作り方
+              <span class="small dk-session_time">25分</span>
+              <span class="dk-speaker">zaki50</span>
+        </ul>
+      </dd>
+
+      <dt>Android の最新動向 (Trends in Android technology)</dt>
+      <dd>
+        <ul class="dk-session_list">
+          <li>進化するランタイムART
+              <span class="small dk-session_time">50分</span>
+              <span class="dk-speaker">kmt-t</span>
+          <li>Android と SELinux
+              <span class="small dk-session_time">25分</span>
+              <span class="dk-speaker">androidsola</span>
+          <li>ARTのメモリ管理
+              <span class="small dk-session_time">25分</span>
+              <span class="dk-speaker">@haru067</span>
+        </ul>
+      </dd>
+
+      <dt>デザイン・UI (Design and UI)</dt>
+      <dd>
+        <ul class="dk-session_list">
+          <li>JellyBeanとKitKatで実現するマテリアルデザイン
+              <span class="small dk-session_time">25分</span>
+              <span class="dk-speaker">androhi</span>
+          <li>デザイナーがXMLを書くことでできる改善しやすいアプリ開発
+              <span class="small dk-session_time">25分</span>
+              <span class="dk-speaker">@yulily100</span>
+          <li>Material Designを取り入れたデザインリニューアル
+              <span class="small dk-session_time">50分</span>
+              <span class="dk-speaker">ninjinkun, yuki930</span>
+        </ul>
+      </dd>
+
+      <dt>ハードウェア (Hardware)</dt>
+      <dd>
+        <ul class="dk-session_list">
+          <li>モバイルにおける電力最適化のための1プラクティス
+              <span class="small dk-session_time">25分</span>
+              <span class="dk-speaker">Ohoooo</span>
+          <li>Bitmapは怖くない。
+              <span class="small dk-session_time">25分</span>
+              <span class="dk-speaker">wasabeef_jp</span>
+        </ul>
+      </dd>
+
+      <dt>メンテナンス (Quality and Sustainability)</dt>
+      <dd>
+        <ul class="dk-session_list">
+          <li>絶対落ちないアプリの作り方
+              <span class="small dk-session_time">25分</span>
+              <span class="dk-speaker">白山　文彦</span>
+          <li>アプリを公開する前に、最低限知っておきたいセキュリティ事項
+              <span class="small dk-session_time">50分</span>
+              <span class="dk-speaker">Gaku Taniguchi</span>
+          <li>大容量データのダウンロード戦略
+              <span class="small dk-session_time">25分</span>
+              <span class="dk-speaker">@misyobun</span>
+          <li>開発を効率的に進めるられるまでの道程
+              <span class="small dk-session_time">25分</span>
+              <span class="dk-speaker">@cattaka_net</span>
+          <li>アプリの企画、プロトタイプからリリースに至るまで
+              <span class="small dk-session_time">25分</span>
+              <span class="dk-speaker">@__chocomelon</span>
+          <li>ゲームアプリケーションのアップデートサイクル
+              <span class="small dk-session_time">25分</span>
+              <span class="dk-speaker">@iizukak</span>
+        </ul>
+      </dd>
+
+      <dt>その他</dt>
+      <dd>
+        <ul class="dk-session_list">
+          <li>Andorid学ぶ君へ。生き抜くためのナレッジ共有
+              <span class="small">(初心者・ナレッジ共有)</span>
+              <span class="small dk-session_time">25分</span>
+              <span class="dk-speaker">岡野 忍(@operandoOS)</span>
+          <li>Fragmentではまらないためのあれこれ
+              <span class="small">(開発テクニック)</span>
+              <span class="small dk-session_time">50分</span>
+              <span class="dk-speaker">あんざいゆき</span>
+          <li>CardboardのUXをカメラで向上する
+              <span class="small">(VR)</span>
+              <span class="small dk-session_time">25分</span>
+              <span class="dk-speaker">高橋憲一</span>
+        </ul>
+      </dd>
+    </dl>
+  </div>
+
   <div id="registration" class="row">
     <h2>一般参加登録</h2>
-    <p>3月中旬より受付開始します。今しばらくお待ちください。</p>
+    <p>3月中旬（調整中、募集を開始する前に告知期間を設ける予定です）より受付開始します。今しばらくお待ちください。</p>
   </div>
   <div id="schedule" class="row">
     <h2>開催までのスケジュール</h2>
     <ul>
       <li>2月3日：サイト公開とCFP開始</li>
       <li>2月25日：CFP締め切り</li>
-      <li>3月中旬：タイムテーブル発表</li>
-      <li>3月中旬：参加登録開始</li>
+      <li>3月中旬：タイムテーブル発表（調整中のため、3/12 セッション一覧を発表）</li>
+      <li>3月中旬：参加登録開始（現在、調整中）</li>
       <li>4月25日：開催当日（懇親会も予定しています）</li>
     </ul>
   </div>

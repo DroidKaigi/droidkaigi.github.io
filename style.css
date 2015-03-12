@@ -113,7 +113,7 @@
   }
   .dk-nav li:after {
     content: " /";
-    margin: 0 4px;
+    margin: 0 1px 0 1px;
   }
   .dk-nav li:last-child:after {
     margin: 0;
@@ -133,6 +133,9 @@
   }
   .dk-cfp-btn {
     text-align: center;
+  }
+  .dk-session_list {
+    padding-left: 20px;
   }
 }
 
@@ -162,4 +165,13 @@
 footer {
   background-color: #f5f5f5;
   padding: 15px 0;
+}
+
+.dk-session_time {
+  display: none;
+}
+
+.dk-speaker {
+  margin-left: 1em;
+  display: block;
 }
