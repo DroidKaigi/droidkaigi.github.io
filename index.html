@@ -1,5 +1,5 @@
 ---
-# jekyll-sitemapのためのYAML front matterブロック
+# jekyllのためのYAML front matterブロック
 ---
 
 <!doctype html>
@@ -111,36 +111,13 @@
             基調講演、タイムテーブルなど決まり次第、本サイトで発信していきます。<br>
             以下セッションの詳細については、DroidKaigi 2015 応募されたトーク一覧もご覧ください。</p>
           <ul class="session-list">
+            {% for session in site.data.sessions %}
             <li class="card">
-              <p class="topic">開発環境・ツール</p>
-              <h4 class="session-title">僕らのデータ同期プラクティス</h4>
-              <p class="speaker">Nkzn</p>
+              <p class="topic">{{ session.topic | escape }}{% if session.topic_other != null %}({{ session.topic_other | escape }}){% endif %}</p>
+              <h4 class="session-title">{{ session.title | escape }}</h4>
+              <p class="speaker">{{ session.speaker | escape }}</p>
             </li>
-            <li class="card">
-              <p class="topic">Android の最新動向</p>
-              <h4 class="session-title">進化するランタイムART</h4>
-              <p class="speaker">kmt-t</p>
-            </li>
-            <li class="card">
-              <p class="topic">デザイン・UI</p>
-              <h4 class="session-title">JellyBeanとKitKatで実現するマテリアルデザイン</h4>
-              <p class="speaker">androhi</p>
-            </li>
-            <li class="card">
-              <p class="topic">ハードウェア</p>
-              <h4 class="session-title">モバイルにおける電力最適化のための1プラクティス</h4>
-              <p class="speaker">Ohoooo</p>
-            </li>
-            <li class="card">
-              <p class="topic">メンテナンス</p>
-              <h4 class="session-title">絶対落ちないアプリの作り方</h4>
-              <p class="speaker">白山　文彦</p>
-            </li>
-            <li class="card">
-              <p class="topic">その他</p>
-              <h4 class="session-title">Andorid学ぶ君へ。生き抜くためのナレッジ共有</h4>
-              <p class="speaker">@operandoOS</p>
-            </li>
+            {% endfor %}
           </ul>
         </section>
       </div>
