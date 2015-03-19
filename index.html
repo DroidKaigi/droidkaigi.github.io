@@ -23,9 +23,7 @@
   <meta property="og:description" content="DroidKaigiは、エンジニアが主役のAndroidカンファレンスです。 Android技術情報の共有とコミュニケーションを目的に2015/4/25(土)に開催します。" />
 
   <link rel="canonical" href="http://droidkaigi.github.io/"/>
-  <link rel="shortcut icon" href="img/favicon.png">
-
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="images/favicon.png">
   <link rel="stylesheet" href="style.css">
   <!--[if lt IE 9]>
     <script src="//oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
@@ -35,277 +33,154 @@
 </head>
 <body>
 
-<div class="dk-header">
-  <div class="container">
-    <div class="row">
-      <ul class="dk-nav list-inline">
-        <li><a href="#details">Details</a></li>
-        <li><a href="#date">Date</a></li>
-        <li><a href="#cfp">CFP</a></li>
-        <li><a href="#registration">Registration</a></li>
-        <li><a href="#faq">FAQ</a></li>
-      </ul>
-    </div>
-    <div class="row">
-      <div class="col-sm-1 col-md-2 col-lg-2"></div>
-      <div class="col-sm-5 col-md-4 col-lg-4">
-        <div class="dk-font-roboto dk-jumbotron">
-          <h1><a href="#">DroidKaigi</a></h1>
-          <p>2015/04/25 (Sat)</p>
-          <p><a class="btn btn-default btn-lg dk-shadow" href="#cfp" role="button">Call For Papers</a></p>
-        </div>
-      </div>
-      <div class="col-sm-5 col-md-4 col-lg-3">
-        <img class="dk-eyecatch img-responsive center-block" src="img/eyecatch.png" alt="DroidKaigi">
-      </div>
-      <div class="col-sm-1 col-md-2 col-lg-3"></div>
-    </div>
-  </div>
-</div>
-
-<div class="dk-section container">
-
-  <div class="row">
-    <ul class="text-center list-inline dk-socials">
-      <li style="position:relative;top:-5px;">
-        <div class="fb-like" data-share="true" data-layout="button_count" data-width="100" data-show-faces="false" data-href="http://droidkaigi.github.io/"></div>
-      </li>
-      <li>
-        <a href="http://b.hatena.ne.jp/entry/http://droidkaigi.github.io/" class="hatena-bookmark-button" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加">
-          <img src="//b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
+<body>
+  <header>
+    <div class="header-inner">
+      <h1 class="page-title">
+        <img src="images/droidkun.png" alt="welcome to DroidKaigi" class="main-image">
+        DroidKaigi</h1>
+      <p class="page-description">DroidKaigiは、エンジニアが主役の<br class="for-sp">Androidカンファレンスです</p>
+        <ul class="day-place">
+          <li><span class="note">Day</span>2015/04/25(Sat)</li>
+          <li><span class="note">Place</span>CyberAgent, Inc.</li>
+        </ul>
+        <ul class="list-inline dk-socials">
+          <li style="position:relative;top:-5px;">
+            <div class="fb-like" data-share="true" data-layout="button_count" data-width="100" data-show-faces="false" data-href="http://droidkaigi.github.io/"></div>
+          </li>
+          <li>
+            <a href="http://b.hatena.ne.jp/entry/http://droidkaigi.github.io/" class="hatena-bookmark-button" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加">
+              <img src="//b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
+            </a>
+          </li>
+          <li>
+            <div class="g-plusone" data-size="medium"></div>
+          </li>
+          <li>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-text="DroidKaigi | 2015/04/25" data-url="http://droidkaigi.github.io/" data-hashtags="droidkaigi" data-lang="ja">ツイート</a>
+          </li>
+        </ul>
+        <a href="/" class="btn-floating">
+          <img src="images/register.svg" alt="register">
         </a>
-      </li>
-      <li>
-        <div class="g-plusone" data-size="medium"></div>
-      </li>
-      <li>
-        <a href="https://twitter.com/share" class="twitter-share-button" data-text="DroidKaigi | 2015/04/25" data-url="http://droidkaigi.github.io/" data-hashtags="droidkaigi" data-lang="ja">ツイート</a>
-      </li>
-    </ul>
-  </div>
-
-  <div itemscope itemtype="http://schema.org/Event">
-    <div id="details" class="row">
-      <h2>開催概要</h2>
-      <p><strong itemprop="name">DroidKaigi</strong>は、エンジニアが主役のAndroidカンファレンスです。Android開発者有志による<a href="#team">実行委員会</a>が主催し、Android技術情報の共有とコミュニケーションを目的に2015/4/25(土)に開催します。</p>
-      <p>Androidの利用シーンは多岐に渡り、一人ではとてもカバーしきれません。カンファレンスを通して業界全体で知見を共有し、より良いソフトウェア開発に繋げていきたいです。</p>
-      <p>DroidKaigiのセッションでは、Androidの最新動向、デザイン、開発環境、メンテナンス、ハードウェアなどについてのトピックを扱います。なお、セッションは現在公募中です。詳しくは<a href="#cfp">CFP</a>をご覧ください。</p>
+        <p class="baloon">Register</p>
     </div>
-    <div id="date" class="row">
-      <h2>日時/会場</h2>
-      <p itemprop="startDate" content="2015-04-25T10:00+09:00">2015/4/25(土) 10:00〜18:00</p>
-      <p>2トラック構成、10〜20セッションを予定しています。基調講演、タイムテーブルなど決まり次第、本サイトで発信していきます。</p>
-      <p itemprop="location" itemscope itemtype="http://schema.org/Place">
-        <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-          〒<span itemprop="postalCode">150-0043</span>
-          <span itemprop="addressRegion">東京都</span><span itemprop="addressLocality">渋谷区</span><span itemprop="streetAddress">道玄坂1丁目12番1号</span> 渋谷マークシティ ウエスト 13F
-        </span>
-        <br>会場提供：<span itemprop="name">株式会社サイバーエージェント</span>
-      </p>
-      <ul>
-        <li><a href="https://www.google.co.jp/maps/place/%E6%B8%8B%E8%B0%B7%E3%83%9E%E3%83%BC%E3%82%AF%E3%82%B7%E3%83%86%E3%82%A3/">渋谷マークシティ(Google Map)</a></li>
-        <li><a href="http://frontrend.github.io/blog/shibuya-markcity/">渋谷マークシティ 13階 サイバーエージェントセミナールームへの道順</a></li>
-      </ul>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3241.776812587284!2d139.6980664!3d35.657870100000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b563a2365ab%3A0x11f98d568e46cae3!2z44CSMTUwLTAwNDMg5p2x5Lqs6YO95riL6LC35Yy66YGT546E5Z2C77yR5LiB55uu77yR4oiS77yR77yS4oiS77yRIOa4i-iwt-ODnuODvOOCr-OCt-ODhuOCow!5e0!3m2!1sja!2sjp!4v1422892671655" frameborder="0" style="border:0" class="dk-gmap center-block"></iframe>
+  </header>
+
+  <div class="container">
+    <div class="container-inner">
+      <div class="row">
+        <section class="details">
+          <h2 class="section-title">Details</h2>
+          <ul class="details-contents">
+            <li class="column3">
+              <div class="icon-image">
+                <img src="images/flag.svg" alt="" class="icon">
+              </div>
+              <h3 class="details-title">About</h3>
+              <p class="description">DroidKaigiは、エンジニアが主役のAndroidカンファレンスです。有志によって主催し、Android技術情報の共有とコミュニケーションを目的に開催します。</p>
+              <p class="description">Androidの利用シーンは多岐に渡り、一人ではとてもカバーしきれません。カンファレンスを通して業界全体で知見を共有し、より良いソフトウェア開発に繋げていきましょう。</p>
+              <p class="description">ハッシュタグ：<a href="https://twitter.com/search?q=%20%23DroidKaigi&src=typd">#droidkaigi</a></p>
+            </li>
+            <li class="column3">
+              <div class="icon-image">
+                <img src="images/calendar.svg" alt="" class="icon">
+              </div>
+              <h3 class="details-title">Day & Place</h3>
+              <p class="description">Day : 2015/4/25 Sat 10:00〜18:00</p>
+              <p class="description">Place : CyberAgent, Inc.</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3241.7768166466412!2d139.69806599999998!3d35.657869999999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b563a2365ab%3A0x11f98d568e46cae3!2z5riL6LC344Oe44O844Kv44K344OG44Kj!5e0!3m2!1sja!2sjp!4v1426425268598" width="100%" height="150" frameborder="0" style="border:0"></iframe>
+              <p class="description"><a href="http://frontrend.github.io/blog/shibuya-markcity/" target="_blank">会場への行き方</a></p>
+            </p>
+            </li>
+            <li class="column3">
+              <div class="icon-image">
+                <img src="images/plus.svg" alt="" class="plus icon">
+              </div>
+              <h3 class="details-title">Entry</h3>
+              <p class="description">こちらからお申し込みください。<br>参加規模は200名程度となっております。</p>
+              <a href="" class="btn">申し込む</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="row">
+        <section class="timetable">
+          <h2 class="section-title">Sessions</h2>
+          <p class="description">2トラック構成、10〜20セッションを予定しています。<br>
+            基調講演、タイムテーブルなど決まり次第、本サイトで発信していきます。<br>
+            以下セッションの詳細については、DroidKaigi 2015 応募されたトーク一覧もご覧ください。</p>
+          <ul class="session-list">
+            <li class="card">
+              <p class="topic">開発環境・ツール</p>
+              <h4 class="session-title">僕らのデータ同期プラクティス</h4>
+              <p class="speaker">Nkzn</p>
+            </li>
+            <li class="card">
+              <p class="topic">Android の最新動向</p>
+              <h4 class="session-title">進化するランタイムART</h4>
+              <p class="speaker">kmt-t</p>
+            </li>
+            <li class="card">
+              <p class="topic">デザイン・UI</p>
+              <h4 class="session-title">JellyBeanとKitKatで実現するマテリアルデザイン</h4>
+              <p class="speaker">androhi</p>
+            </li>
+            <li class="card">
+              <p class="topic">ハードウェア</p>
+              <h4 class="session-title">モバイルにおける電力最適化のための1プラクティス</h4>
+              <p class="speaker">Ohoooo</p>
+            </li>
+            <li class="card">
+              <p class="topic">メンテナンス</p>
+              <h4 class="session-title">絶対落ちないアプリの作り方</h4>
+              <p class="speaker">白山　文彦</p>
+            </li>
+            <li class="card">
+              <p class="topic">その他</p>
+              <h4 class="session-title">Andorid学ぶ君へ。生き抜くためのナレッジ共有</h4>
+              <p class="speaker">@operandoOS</p>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="row">
+        <section class="faq column3">
+          <h2 class="section-title">FAQ</h2>
+          <p class="description">Q: DroidKaigiは他のAndroidイベントと何が異なるのですか</p>
+          <p class="description">A: Androidを扱う「開発者」の情報共有を目的としたイベントです。Androidに関連していても、企業の製品紹介などマーケティングと判断したセッションはCFPの段階でお断りします。</p>
+          <h3 class="form-title">お気軽にお問い合わせください :)</h3>
+          <p class="description">Call For Papersに関するお問い合わせ：<br>
+            <a href="">お問い合わせissue用GitHubリポジトリ</a>
+          </p>
+          <p class="description">その他のお問い合わせ：<br>
+            <a href="">お問い合わせフォーム</a>
+          </p>
+        </section>
+        <section class="team column3">
+          <h2 class="section-title">Team</h2>
+          <p class="description">DroidKaigi 実行委員会は、Android開発者有志による組織です。</p>
+          <p class="description">代表:<a href="https://github.com/mhidaka" target="_blank"> mhidaka</a></p>
+          <p class="description"><a href="https://github.com/orgs/DroidKaigi/people" target="_blank">DroidKaigi 実行委員会メンバー</a></p>
+        </section>
+        <section class="hashtag column3">
+          <h2 class="section-title">#droidkaigi</h2>
+          <a class="twitter-timeline" href="https://twitter.com/hashtag/DroidKaigi" data-widget-id="577115664244064257">#droidkaigi のツイート</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </section>
     </div>
+    <section class="register">
+      <h2 class="section-title">Register</h2>
+      <p>DroidKaigiは、エンジニアが主役の<br class="for-sp">Androidカンファレンスです</p>
+      <p><a href="" class="btn btn-large">申し込む</a></p>
+    </section>
   </div>
-  <div id="cfp" class="row">
-    <h2>Call For Papers</h2>
-    <!-- callforpapersここから -->
-    <p>DroidKaigi の演題を募集します。応募に関してご不明な点がありましたら、DroidKaigi 実行委員会までご連絡ください。</p>
-    <p>応募されたトークは<a href="https://docs.google.com/spreadsheets/d/186-gpTHPvGwtQTFqvuSs10Tz3ca49gKNZ7uoRSi2HnE/edit?usp=sharing">DroidKaigi 2015 応募されたトーク一覧</a>で公開しています。応募時の参考にしてください。</p>
-    <p>みなさまからのご応募をお待ちしております。</p>
-
-    <h3>応募資格</h3>
-    <ul>
-      <li>Android に関連する技術について語れる方</li>
-      <li>DroidKaigi (2015年4月25日) でスピーカーとして参加可能な方</li>
-    </ul>
-
-    <h3>必要要項</h3>
-    <ul>
-      <li>セッション名（20文字程度）</li>
-      <li>セッション用氏名（ハンドルでも可）</li>
-      <li>トピック<br>
-        <a href="#topics">トピック一覧</a>の中より1つお選びください</li>
-      <li>発表時間<br>
-        希望する発表時間を25分もしくは50分のどちらかを選択してください
-      </li>
-      <li>セッション概要（400文字 〜 2,000文字）<br>
-        あなたのセッションの概要を記述してください。以下の項目が含まれていることが望ましいです。
-        <ul>
-          <li>対象者（初心者向け、テストエンジニア向け、ゲーム開発者向け、など）</li>
-          <li>具体的な工夫点、革新性</li>
-          <li>一般によく知られてはいない、専門的な内容が含まれている</li>
-        </ul>
-      </li>
-      <li>連絡先（Eメール）</li>
-      <li>緊急連絡先</li>
-      <li>その他、要望やご不明な点があればお書きください</li>
-    </ul>
-
-    <h3>応募方法</h3>
-    <p><del>応募フォームより必要事項を記載の上、申し込みください。</del></p>
-    <p>応募を締め切りました。</p>
-    <p class="dk-cfp-btn"><a class="btn btn-info btn-lg disabled">応募フォーム</a></p>
-
-    <h3>応募締め切り</h3>
-    <p>2015年2月25日（水）24:00 JST</p>
-
-    <h3>選考方法および結果発表</h3>
-    <p>DroidKaigi 実行委員会で選考の上、3 月中旬に結果をお知らせします。DroidKaigiが最も面白くなるように、運営委員会メンバーの判断で採択します。あらかじめご了承ください。</p>
-
-    <h3>お問い合わせ</h3>
-    <p><a href="#inquiry">お問い合わせ先</a>よりお問い合わせください。</p>
-
-    <h3>注意事項</h3>
-    <ul>
-      <li>採択・非採択に関わらず応募内容（個人情報を除く）は<a href="https://docs.google.com/spreadsheets/d/186-gpTHPvGwtQTFqvuSs10Tz3ca49gKNZ7uoRSi2HnE/edit?usp=sharing">DroidKaigi 2015 応募されたトーク一覧</a>に公開されます</li>
-      <li>撮影された写真は、Webサイトなどで公開される場合があります</li>
-      <li>Ust等の動画配信はありません</li>
-      <li>取材があった場合、メディア掲載される可能性があります</li>
-    </ul>
-
-    <h3>個人情報の取り扱いについて</h3>
-    <ul>
-      <li>DroidKaigiで得た個人情報は連絡のみに使い、他の用途には使いません</li>
-      <li>DroidKaigiで得た個人情報はイベントが終わったら破棄します</li>
-    </ul>
-
-    <h3 id="topics">トピック</h3>
-    <p>以下のトピックのうち、自分のセッションがもっとも近いと思うものを1つ選択してください。
-      特定のトピックに当てはまらない話や複数のトピックのまたがる話であれば、もっとも近いトピックを選んでください。
-      もしどれにも当たらないと思われる場合は「その他」を選択の上、トピックを記入してください。</p>
-    <p>このトピックは審査の参考、および参加者がセッションを選ぶために使用します。</p>
-
-    <dl>
-      <dt>開発環境・ツール（Productivity and Tooling）</dt>
-      <dd>
-        <p>Android アプリ開発のベスト・プラクティスや開発を補助するツーリングに関する話題です。gradle や maven などのビルド・システムも含みます。</p>
-        <p>例：
-          <ul>
-            <li>Android Studio</li>
-            <li>Gradle</li>
-            <li>CI</li>
-            <li>Genymotion</li>
-            <li>ビルドの高速化</li>
-          </ul>
-        </p>
-      </dd>
-      <dt>Android の最新動向 (Trends in Android technology)</dt>
-      <dd>
-        <p>Lollipop がリリースされ、ランタイムも Dalvik から ART になりました。
-          また最近では RxAndroid などのリアクティブ・プログラミングも話題です。
-          ぜひ、最新のアーキテクチャや技術について語ってください。</p>
-        <p>例：
-          <ul>
-            <li>アーキテクチャ (Reactive programming, DI)</li>
-            <li>HTTP/2</li>
-            <li>ART</li>
-            <li>Jack &amp; Jill</li>
-          </ul>
-        </p>
-      </dd>
-      <dt>デザイン・UI (Design and UI)</dt>
-      <dd>
-        <p>マテリアルデザインをはじめ、Android の UI デザインに関する知見を共有ください。カスタム View などの話題もこちらになります。</p>
-        <p>例：
-        <ul>
-          <li>マテリアルデザイン</li>
-          <li>drawables</li>
-          <li>User Centered Design (UCD)</li>
-        </ul>
-        </p>
-      </dd>
-      <dt>ハードウェア (Hardware)</dt>
-      <dd>
-        <p>Android TV や Android Wear に対応するアプリも増えてきました。また Lollipop で追加された Camera2 API も注目を浴びています。ぜひ Android をめぐるハードウェアに関する話をきかせてください。動画や画像、音声に関する技術もこちらになります。</p>
-        <p>例：
-          <ul>
-            <li>カメラ</li>
-            <li>動画、画像、音声技術</li>
-            <li>センサー</li>
-            <li>Arduino</li>
-            <li>ドローン</li>
-            <li>Android TV</li>
-            <li>Android Wear</li>
-          </ul>
-        </p>
-      </dd>
-      <dt>メンテナンス (Quality and Sustainability)</dt>
-      <dd>
-        <p>Android アプリのテストはどのようにしていますか？セキュリティや互換性も非常に重要な課題です。また、アプリをリリースするまでのプロセスやリリースした後の運用に関する話もこちらを選択してください。</p>
-        <p>例：
-          <ul>
-            <li>運用</li>
-            <li>テスト</li>
-            <li>カスタマーサポート</li>
-            <li>後方互換性</li>
-            <li>機種間互換性</li>
-            <li>セキュリティ</li>
-          </ul>
-        </p>
-      </dd>
-    </dl>
-
-    <h3>応募例</h3>
-    <p>【タイトル】一度は引っかかるAndorid設計の落とし穴<br>
-    【トピック】メンテナンス<br>
-    【発表時間】５０分<br>
-    【概要】アプリ開発において、設計はプログラミングの成否を決定づける重要な要素です。しかし、多くの事業ドメインでAndroidが使われることもあり、横断的な知識共有が難しく、時として不具合を生みやすいコードが混入することがありました。今回は、実際の開発現場で行ったリファクタリングの成果を共有します。<br>
-    見通しの悪くなったソースコードをどのように分析し、対応していけばいいか、という観点でパターンの分類を行い、改善前と後でソースコードを見比べつつ、問題点と改善点を紹介していきます。<br>
-    自らの開発経験を踏まえて、修正のタイミング、リファクタリング前後のテスト方針など落とし穴の防ぎ方が共有できればと考えています。<br>
-    特に聞いて欲しい対象は、初級者です。また複数人がアプリケーション開発を行うプロジェクトでは中級者、上級者であっても設計方針、レビューポイントの策定に役立つと想像しています</p>
-
-    <!-- callforpapersここまで -->
-  </div>
-  <div id="registration" class="row">
-    <h2>一般参加登録</h2>
-    <p>3月中旬より受付開始します。今しばらくお待ちください。</p>
-  </div>
-  <div id="schedule" class="row">
-    <h2>開催までのスケジュール</h2>
-    <ul>
-      <li>2月3日：サイト公開とCFP開始</li>
-      <li>2月25日：CFP締め切り</li>
-      <li>3月中旬：タイムテーブル発表</li>
-      <li>3月中旬：参加登録開始</li>
-      <li>4月25日：開催当日（懇親会も予定しています）</li>
-    </ul>
-  </div>
-  <div id="faq" class="row">
-    <h2>FAQ</h2>
-    <ul>
-      <li class="dk-faq-q">DroidKaigiは他のAndroidイベントと何が異なるのですか</li>
-      <li class="dk-faq-a">Androidを扱う「開発者」の情報共有を目的としたイベントです。Androidに関連していても、企業の製品紹介などマーケティングと判断したセッションはCFPの段階でお断りします。</li>
-    </ul>
-  </div>
-  <div id="team" class="row">
-    <h2>Team</h2>
-    <p><strong>DroidKaigi</strong> 実行委員会は、Android開発者有志による組織です。</p>
-    <p>代表: <a href="https://github.com/mhidaka">mhidaka</a></p>
-    <p><a href="https://github.com/orgs/DroidKaigi/people">DroidKaigi 実行委員会メンバー</a></p>
-  </div>
-  <div id="inquiry" class="row">
-    <h2>お問い合わせ先</h2>
-    <ul>
-      <li>Call For Papersに関するお問い合わせ: <a href="https://github.com/DroidKaigi/Questions/">お問い合わせissue用GitHubリポジトリ</a></li>
-      <li>その他のお問い合わせ: <a href="https://docs.google.com/forms/d/1jQD2tA7q5Z32XKO5nkXVdq53LfPUsWWUgjyyA_KoGGE/viewform">お問い合わせフォーム</a></li>
-    </ul>
-  </div>
-</div>
-
-<footer>
-  <div class="container text-muted text-center">
-    <p>&copy; 2015 <a href="https://github.com/DroidKaigi"><strong>DroidKaigi 実行委員会</strong></a></p>
-    <p class="text-left">
-      <small>
-        Android is a trademark of Google Inc.<br>
-        The Android robot is reproduced or modified from work created and shared by Google and used according to terms described in the <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons 3.0 Attribution</a> License.
-      </small>
-    </p>
-  </div>
-</footer>
+  <footer>
+    <div class="footer-inner">
+      <small>© 2015 DroidKaigi 実行委員会</small>
+      <p class="license">Android is a trademark of Google Inc.The Android robot is reproduced or modified from work created and shared by Google and used according to terms described in the Creative Commons 3.0 Attribution License.</p>
+    </div>
+  </footer>
 
   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
