@@ -544,7 +544,12 @@ header {
 
 .session-title {
   margin: 0 0 .5em 0;
-  line-height: 1.2; }
+  line-height: 1.2;
+  max-height: 38px;
+  overflow:hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; }
 
 .speaker {
   margin: 0;
