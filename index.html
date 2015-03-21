@@ -1,5 +1,5 @@
 ---
-# jekyll-sitemapのためのYAML front matterブロック
+# jekyllのためのYAML front matterブロック
 ---
 
 <!doctype html>
@@ -70,7 +70,7 @@
   <div class="container">
     <div class="container-inner">
       <div class="row">
-        <section class="details">
+        <section id="details" class="details">
           <h2 class="section-title">Details</h2>
           <ul class="details-contents">
             <li class="column3">
@@ -82,7 +82,7 @@
               <p class="description">Androidの利用シーンは多岐に渡り、一人ではとてもカバーしきれません。カンファレンスを通して業界全体で知見を共有し、より良いソフトウェア開発に繋げていきましょう。</p>
               <p class="description">ハッシュタグ：<a href="https://twitter.com/search?q=%20%23DroidKaigi&src=typd">#droidkaigi</a></p>
             </li>
-            <li class="column3">
+            <li id="date" class="column3">
               <div class="icon-image">
                 <img src="images/calendar.svg" alt="" class="icon">
               </div>
@@ -93,7 +93,7 @@
               <p class="description"><a href="http://frontrend.github.io/blog/shibuya-markcity/" target="_blank">会場への行き方</a></p>
             </p>
             </li>
-            <li class="column3">
+            <li id="registration" class="column3">
               <div class="icon-image">
                 <img src="images/plus.svg" alt="" class="plus icon">
               </div>
@@ -104,48 +104,25 @@
           </ul>
         </section>
       </div>
-      <div class="row">
+      <div id="sessions" class="row">
         <section class="timetable">
           <h2 class="section-title">Sessions</h2>
           <p class="description">2トラック構成、10〜20セッションを予定しています。<br>
             基調講演、タイムテーブルなど決まり次第、本サイトで発信していきます。<br>
             以下セッションの詳細については、DroidKaigi 2015 応募されたトーク一覧もご覧ください。</p>
           <ul class="session-list">
+            {% for session in site.data.sessions %}
             <li class="card">
-              <p class="topic">開発環境・ツール</p>
-              <h4 class="session-title">僕らのデータ同期プラクティス</h4>
-              <p class="speaker">Nkzn</p>
+              <p class="topic">{{ session.topic | escape }}{% if session.topic_other != null %}({{ session.topic_other | escape }}){% endif %}</p>
+              <h4 class="session-title">{{ session.title | escape }}</h4>
+              <p class="speaker">{{ session.speaker | escape }}</p>
             </li>
-            <li class="card">
-              <p class="topic">Android の最新動向</p>
-              <h4 class="session-title">進化するランタイムART</h4>
-              <p class="speaker">kmt-t</p>
-            </li>
-            <li class="card">
-              <p class="topic">デザイン・UI</p>
-              <h4 class="session-title">JellyBeanとKitKatで実現するマテリアルデザイン</h4>
-              <p class="speaker">androhi</p>
-            </li>
-            <li class="card">
-              <p class="topic">ハードウェア</p>
-              <h4 class="session-title">モバイルにおける電力最適化のための1プラクティス</h4>
-              <p class="speaker">Ohoooo</p>
-            </li>
-            <li class="card">
-              <p class="topic">メンテナンス</p>
-              <h4 class="session-title">絶対落ちないアプリの作り方</h4>
-              <p class="speaker">白山　文彦</p>
-            </li>
-            <li class="card">
-              <p class="topic">その他</p>
-              <h4 class="session-title">Andorid学ぶ君へ。生き抜くためのナレッジ共有</h4>
-              <p class="speaker">@operandoOS</p>
-            </li>
+            {% endfor %}
           </ul>
         </section>
       </div>
       <div class="row">
-        <section class="faq column3">
+        <section id="faq" class="faq column3">
           <h2 class="section-title">FAQ</h2>
           <p class="description">Q: DroidKaigiは他のAndroidイベントと何が異なるのですか</p>
           <p class="description">A: Androidを扱う「開発者」の情報共有を目的としたイベントです。Androidに関連していても、企業の製品紹介などマーケティングと判断したセッションはCFPの段階でお断りします。</p>
@@ -157,7 +134,7 @@
             <a href="">お問い合わせフォーム</a>
           </p>
         </section>
-        <section class="team column3">
+        <section id="team" class="team column3">
           <h2 class="section-title">Team</h2>
           <p class="description">DroidKaigi 実行委員会は、Android開発者有志による組織です。</p>
           <p class="description">代表:<a href="https://github.com/mhidaka" target="_blank"> mhidaka</a></p>
