@@ -1,4 +1,4 @@
-DroidKaigi Webサイト
+DroidKaigi Webサイト [![Build Status](https://travis-ci.org/DroidKaigi/droidkaigi.github.io.svg)](https://travis-ci.org/DroidKaigi/droidkaigi.github.io)
 ==========================
 
 http://droidkaigi.github.io/

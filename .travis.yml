@@ -1,0 +1,11 @@
+language: ruby
+rvm:
+  - 2.1
+script:
+  - bundle exec jekyll build
+  - bundle exec htmlproof ./_site --alt-ignore "/images/.+/" --only-4xx --check-favicon --verbose
+  - ruby -e "require'yaml';YAML.load_file(ARGV[0])" _data/sessions.yml
+  - ruby -e "require'json';JSON.load(File.read(ARGV[0]))" _site/sessions.json
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
