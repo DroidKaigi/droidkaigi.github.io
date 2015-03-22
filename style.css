@@ -408,12 +408,17 @@ header {
       font-size: 300%; } }
 
 .page-description {
-  margin: .5em 0 1em; }
-
+  margin: .5em 0 1em;
+  font-size: 115% }
+.organize {
+  margin: .5em 0 1em;
+  font-size: 95%;
+}
 .day-place {
   position: relative;
   display: inline-block;
-  font-size: 120%; }
+  font-size: 120%;
+  margin: 5px 0 0 0; }
   .day-place li {
     float: left;
     margin: 0 8px; }
