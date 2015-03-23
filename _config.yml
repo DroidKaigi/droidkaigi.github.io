@@ -3,3 +3,5 @@ exclude: ['vendor', 'Gemfile', 'Gemfile.lock', 'README.md']
 
 gems:
   - jekyll-sitemap
+
+timezone: Asia/Tokyo
