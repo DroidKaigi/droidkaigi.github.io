@@ -603,6 +603,11 @@ small {
   list-style: none;
   text-align: center;
   margin: 15px 0 0 0; }
+  @media (max-width: 500px) {
+    .list-inline {
+      height: 52px;
+    }
+  }
   .list-inline li {
     display: inline-block;
     padding-right: 5px;
