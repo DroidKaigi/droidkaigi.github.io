@@ -353,7 +353,7 @@ ul {
 .column2 {
   width: 406px;
   float: left; }
-  @media (max-width: 850px) {
+  @media (max-width: 860px) {
     .column2 {
       float: none;
       width: 100%; } }
@@ -364,7 +364,7 @@ ul {
   margin: 0 32px 0 0; }
   .column3:nth-child(3n) {
     margin: 0; }
-  @media (max-width: 850px) {
+  @media (max-width: 860px) {
     .column3 {
       float: none;
       width: 100%;
@@ -458,7 +458,7 @@ header {
 .container-inner {
   max-width: 844px;
   margin: 0 auto; }
-    @media (max-width: 850px) {
+    @media (max-width: 860px) {
     .container-inner {
       width: 500px;
       margin: 0 auto;
@@ -540,7 +540,7 @@ header {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
   .card:nth-child(3n) {
     margin: 0 0 16px 0; }
-  @media (max-width: 850px) {
+  @media (max-width: 860px) {
     .card {
       float: none;
       width: 100%; } }
