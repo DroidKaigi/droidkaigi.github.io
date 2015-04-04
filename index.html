@@ -1,5 +1,18 @@
 ---
 # jekyllのためのYAML front matterブロック
+session_times:
+  - "10:00 - 11:00"
+  - "11:00 - 11:30"
+  - "11:30 - 12:00"
+  - "12:00 - 13:00"
+  - "13:00 - 14:00"
+  - "14:00 - 14:30"
+  - "14:30 - 15:00"
+  - "15:00 - 15:30"
+  - "15:30 - 16:00"
+  - "16:00 - 16:30"
+  - "16:30 - 17:00"
+  - "17:00 - 17:30"
 ---
 
 <!doctype html>
@@ -108,65 +121,92 @@
           <p class="description">2トラック構成、10〜20セッションを予定しています。<br>
             基調講演、タイムテーブルなど決まり次第、本サイトで発信していきます。<br>
             以下セッションの詳細については、<a href="https://docs.google.com/spreadsheets/d/186-gpTHPvGwtQTFqvuSs10Tz3ca49gKNZ7uoRSi2HnE/edit?usp=sharing" target="_blank">DroidKaigi 2015 応募されたトーク一覧</a>もご覧ください。</p>
-                <table>
-                  <tr>
-                    <th></th>
-                    <td><p class="room-title">ROOM:A</p></td>
-                    <td><p class="room-title">ROOM:B</p></td>
-                  </tr>
-                  <tr>
-                    <th>10:00 - 11:00</th>
-                    <td colspan="2">
-                      <div class="card card-table card-first">
-                        <p class="topic">基調講演</p>
-                        <h4 class="session-title">Fragmentではまらないためのあれこれ</h4>
-                        <p class="speaker">ynzm</p>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>11:00 - 11:25</th>
-                    <td>
-                      <div class="card card-table">
-                        <p class="topic">メンテナンス</p>
-                        <h4 class="session-title">開発を効率的に進めるられるまでの道程</h4>
-                        <p class="speaker"><span class="room-title-sp">ROOM:A</span>@cattaka_net</p></td>
-                      </div>
-                    <td>
-                      <div class="card card-table">
-                        <p class="topic">その他(VR)</p>
-                        <h4 class="session-title">CardboardのUXをカメラで向上する (VR)</h4>
-                        <p class="speaker"><span class="room-title-sp">ROOM:B</span>高橋憲一</p>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>11:30 - 11:55</th>
-                    <td>
-                      <div class="card card-table">
-                        <p class="topic">メンテナンス</p>
-                        <h4 class="session-title">絶対落ちないアプリの作り方</h4>
-                        <p class="speaker"><span class="room-title-sp">ROOM:A</span>白山　文彦</p>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="card card-table">
-                        <p class="topic">メンテナンス</p>
-                        <h4 class="session-title">ゲームアプリケーションのアップデートサイクル</h4>
-                        <p class="speaker"><span class="room-title-sp">ROOM:B</span>@iizukak</p>
-                      </div>
-                    </td>
-                  </tr>
-                </table>
-          <ul class="session-list">
-            {% for session in site.data.sessions %}
-            <li class="card">
-              <p class="topic">{{ session.topic | escape }}{% if session.topic_other != null %}({{ session.topic_other | escape }}){% endif %}</p>
-              <h4 class="session-title">{{ session.title | escape }}</h4>
-              <p class="speaker">{{ session.speaker | escape }}</p>
-            </li>
+
+          <table>
+            <tr>
+              <th></th>
+              <td><p class="room-title">ROOM:A</p></td>
+              <td><p class="room-title">ROOM:B</p></td>
+            </tr>
+            {% for session_time in page.session_times %}
+            <tr>
+              <th>{{ session_time }}</th>
+              {% assign start_time = session_time | split:' ' | first %}
+              {% for session in site.data.sessions %}{% if session.start_time == start_time %}
+                {% assign colspan = session.room | size %}
+                {% assign rowspan = 1 %}
+                {% if session.time == "50min" and session.room != "AB" %}{% assign rowspan = 2 %}{% endif %}
+              <td colspan="{{ colspan }}" rowspan="{{ rowspan }}">
+                <div class="card card-table {% if forloop.first %}card-first{% endif %}">
+                  <p class="topic">
+                    {{ session.topic | escape }}
+                    {% if session.topic_other != null %}({{ session.topic_other | escape }}){% endif %}
+                  </p>
+                  <h4 class="session-title">{{ session.title | escape }}</h4>
+                  <p class="speaker">
+                    {% if session.room != "AB" %}<span class="room-title-sp">ROOM:{{ session.room }}</span>{% endif %}
+                    <span>{{ session.speaker | escape }}</span>
+                  </p>
+                </div>
+              </td>
+              {% endif %}{% endfor %}
+            </tr>
             {% endfor %}
-          </ul>
+          </table>
+
+          <!-- {% unless page %} 表示確認のため残してある。レンダリング時には消える。 -->
+          <table>
+            <tr>
+              <th></th>
+              <td><p class="room-title">ROOM:A</p></td>
+              <td><p class="room-title">ROOM:B</p></td>
+            </tr>
+            <tr>
+              <th>10:00 - 11:00</th>
+              <td colspan="2">
+                <div class="card card-table card-first">
+                  <p class="topic">基調講演</p>
+                  <h4 class="session-title">Fragmentではまらないためのあれこれ</h4>
+                  <p class="speaker">ynzm</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>11:00 - 11:25</th>
+              <td>
+                <div class="card card-table">
+                  <p class="topic">メンテナンス</p>
+                  <h4 class="session-title">開発を効率的に進めるられるまでの道程</h4>
+                  <p class="speaker"><span class="room-title-sp">ROOM:A</span>@cattaka_net</p></td>
+                </div>
+              <td>
+                <div class="card card-table">
+                  <p class="topic">その他(VR)</p>
+                  <h4 class="session-title">CardboardのUXをカメラで向上する (VR)</h4>
+                  <p class="speaker"><span class="room-title-sp">ROOM:B</span>高橋憲一</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>11:30 - 11:55</th>
+              <td>
+                <div class="card card-table">
+                  <p class="topic">メンテナンス</p>
+                  <h4 class="session-title">絶対落ちないアプリの作り方</h4>
+                  <p class="speaker"><span class="room-title-sp">ROOM:A</span>白山　文彦</p>
+                </div>
+              </td>
+              <td>
+                <div class="card card-table">
+                  <p class="topic">メンテナンス</p>
+                  <h4 class="session-title">ゲームアプリケーションのアップデートサイクル</h4>
+                  <p class="speaker"><span class="room-title-sp">ROOM:B</span>@iizukak</p>
+                </div>
+              </td>
+            </tr>
+          </table>
+          <!-- {% endunless %} -->
+
         </section>
       </div>
       <div class="row">
