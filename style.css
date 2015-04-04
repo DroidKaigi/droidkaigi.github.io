@@ -384,7 +384,8 @@ ul {
 header {
   background: #8bc34a;
   text-align: center;
-  color: #fff; }
+  color: #fff;
+}
 
 .header-inner {
   max-width: 844px;
@@ -472,7 +473,7 @@ header {
 .section-title {
   color: #8bc34a;
   font-weight: normal;
-  font-size: 212%;
+  font-size: 270%;
   margin: 0 0 .5em 0; }
 
 .details-contents {
@@ -507,14 +508,66 @@ header {
   color: #757575;
   margin: 0 0 .5em; }
 
-.timetable td {
-  width: 300px; }
+#sessions {
+  margin-right: -8px;
+}
 @media (max-width: 700px) {
+  #sessions {
+    margin-right: 0;
+  }
+}
+
+/* タイムテーブル */
+.room-title {
+  text-align: center;
+  color: #8bc34a;
+  font-size: 140%;
+  margin: 16px 0;
+}
+.room-title-sp {
+  display: none;
+}
+.timetable table {
+  width: 100%;
+}
+.timetable th {
+  width: 150px;
+  color: #757575;
+}
+.timetable td {
+  padding: 0 8px;
+  width: 337px;
+}
+@media (max-width: 860px) {
+  .room-title {
+    font-size: 120%;
+    margin: 8px 0;
+  }
+  .timetable td {
+    width: 208px;
+  }
+}
+
+@media (max-width: 520px) {
+  .room-title {
+    display: none;
+  }
+  .room-title-sp {
+    display: inline;
+    color: #8bc34a;
+    margin: 0 5px 0 0;
+  }
   .timetable th {
-    display: block; }
+    display: block;
+    width: 100%;
+    padding: 12px 0 8px }
   .timetable td {
     display: block;
-    width: 100%; } }
+    width: 100%;
+    padding: 0; }
+}
+
+
 
 .session-list {
   display: block;
@@ -537,7 +590,7 @@ header {
   position: relative;
   box-sizing: border-box;
   border-radius: 2px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3); }
   .card:nth-child(3n) {
     margin: 0 0 16px 0; }
   @media (max-width: 860px) {
@@ -545,6 +598,19 @@ header {
       float: none;
       width: 100%; } }
 
+.card-table {
+  width: 100%;
+  margin: 0 0 16px 0;
+}
+@media (max-width: 520px) {
+  .card-table {
+  margin: 0 0 8px 0;
+  }
+}
+
+.card-first {
+  max-width: inherit;
+}
 .topic {
   display: inline-block;
   margin: 0 0 .5em 0;
@@ -573,11 +639,12 @@ header {
   margin: 1.5em 0 .7em; }
 
 .register {
-  border-top: 1px solid #ccc;
   text-align: center;
-  padding: 30px 0 0 0;
   margin: 50px 0 60px; }
-
+.register-inner {
+  border-top: 1px solid #ccc;
+  padding: 30px 0 0 0;
+}
 footer {
   background: #8bc34a; }
 
