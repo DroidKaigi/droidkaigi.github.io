@@ -518,6 +518,9 @@ header {
 }
 
 /* タイムテーブル */
+.timetable td.room-title-container {
+  height: auto;
+}
 .room-title {
   text-align: center;
   color: #8bc34a;
@@ -606,7 +609,7 @@ header {
 }
 @media (max-width: 520px) {
   .card-table {
-  margin: 0 0 8px 0;
+    height: 90%
   }
 }
 
