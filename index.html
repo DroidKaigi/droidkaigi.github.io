@@ -138,7 +138,7 @@ session_times:
                 {% assign rowspan = 1 %}
                 {% if session.time == "50min" and session.room != "AB" %}{% assign rowspan = 2 %}{% endif %}
               <td colspan="{{ colspan }}" rowspan="{{ rowspan }}">
-                <div class="card card-table {% if forloop.first %}card-first{% endif %}">
+                <div class="card {% if forloop.first %}card-first{% endif %}">
                   <p class="topic">
                     {{ session.topic | escape }}
                     {% if session.topic_other != null %}({{ session.topic_other | escape }}){% endif %}
@@ -166,7 +166,7 @@ session_times:
             <tr>
               <th>10:00 - 11:00</th>
               <td colspan="2">
-                <div class="card card-table card-first">
+                <div class="card card-first">
                   <p class="topic">基調講演</p>
                   <h4 class="session-title">Fragmentではまらないためのあれこれ</h4>
                   <p class="speaker">ynzm</p>
@@ -176,13 +176,13 @@ session_times:
             <tr>
               <th>11:00 - 11:25</th>
               <td>
-                <div class="card card-table">
+                <div class="card">
                   <p class="topic">メンテナンス</p>
                   <h4 class="session-title">開発を効率的に進めるられるまでの道程</h4>
                   <p class="speaker"><span class="room-title-sp">ROOM:A</span>@cattaka_net</p></td>
                 </div>
               <td>
-                <div class="card card-table">
+                <div class="card">
                   <p class="topic">その他(VR)</p>
                   <h4 class="session-title">CardboardのUXをカメラで向上する (VR)</h4>
                   <p class="speaker"><span class="room-title-sp">ROOM:B</span>高橋憲一</p>
@@ -192,14 +192,14 @@ session_times:
             <tr>
               <th>11:30 - 11:55</th>
               <td>
-                <div class="card card-table">
+                <div class="card">
                   <p class="topic">メンテナンス</p>
                   <h4 class="session-title">絶対落ちないアプリの作り方</h4>
                   <p class="speaker"><span class="room-title-sp">ROOM:A</span>白山　文彦</p>
                 </div>
               </td>
               <td>
-                <div class="card card-table">
+                <div class="card">
                   <p class="topic">メンテナンス</p>
                   <h4 class="session-title">ゲームアプリケーションのアップデートサイクル</h4>
                   <p class="speaker"><span class="room-title-sp">ROOM:B</span>@iizukak</p>
