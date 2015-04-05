@@ -537,6 +537,7 @@ header {
 .timetable td {
   padding: 0 8px;
   width: 337px;
+  height: 154px;
 }
 @media (max-width: 860px) {
   .room-title {
@@ -585,7 +586,7 @@ header {
   margin: 0 16px 16px 0;
   width: 270px;
   height: 118px;
-  padding: 16px;
+  padding: 8px 16px;
   float: left;
   position: relative;
   box-sizing: border-box;
@@ -600,7 +601,8 @@ header {
 
 .card-table {
   width: 100%;
-  margin: 0 0 16px 0;
+  height: 100%;
+  margin: 0;
 }
 @media (max-width: 520px) {
   .card-table {
@@ -613,7 +615,7 @@ header {
 }
 .topic {
   display: inline-block;
-  margin: 0 0 .5em 0;
+  margin: 8px 0 .5em 0;
   padding: 0 4px;
   color: #fff;
   background: #00bcd4;
