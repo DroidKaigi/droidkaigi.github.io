@@ -144,11 +144,9 @@ session_times:
                     {% if session.topic_other != null %}({{ session.topic_other | escape }}){% endif %}
                   </p>
                   <h4 class="session-title">{{ session.title | escape }}</h4>
-                  <p class="speaker">
-                    {% if session.room != "AB" %}<span class="room-title-sp">ROOM:{{ session.room }}</span>{% endif %}
-                    <span>{{ session.speaker | escape }}</span>
+                  <p class="speaker"><span>{{ session.speaker | escape }}</span>
                   </p>
-                  <p class="info"><span>ROOM:B</span><span>50min</span></p>
+                  <p class="info">{% if session.room != "AB" %}<span>ROOM:{{ session.room }}</span>{% endif %}<span>{{ session.time | escape }}</span></p>
                 </div>
               </td>
               {% endif %}{% endfor %}
