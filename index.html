@@ -131,8 +131,9 @@ session_times:
             </tr>
             {% for session_time in page.session_times %}
             <tr>
-              <th>{{ session_time }}</th>
-              {% assign start_time = session_time | split:' ' | first %}
+              {% assign start_time = session_time | split:' - ' | first %}
+              {% assign end_time = session_time | split:' - ' | last %}
+              <th>{{ start_time }} - <span class="for-pc">{{ end_time }}</span></th>
               {% for session in site.data.sessions %}{% if session.start_time == start_time %}
                 {% assign colspan = session.room | size %}
                 {% assign rowspan = 1 %}

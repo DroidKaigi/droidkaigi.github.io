@@ -381,6 +381,12 @@ ul {
     .for-sp {
       display: inline; } }
 
+.for-pc {
+  display: initial; }
+  @media (max-width: 500px) {
+    .for-pc {
+      display: none; } }
+
 header {
   background: #8bc34a;
   text-align: center;
