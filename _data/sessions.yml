@@ -435,3 +435,35 @@
 
     対象は Android を使用した製品の開発者や Android のカスタマイズを趣味等で行っている開発者を想定しています。
     Android 5.0 からは一般の Android アプリケーションに対してもセキュリティポリシーの定義が有効になっているので、アプリケーション開発者も知っていると良いかもしれません。
+
+- title: "TBA"
+  speaker:
+  room: "A"
+  time: "25min"
+  start_time: "17:30"
+  end_time: "17:55"
+  topic:
+  topic_other:
+  description: |-
+
+
+- title: "撤収作業"
+  speaker:
+  room: "B"
+  time: "25min"
+  start_time: "17:30"
+  end_time: "17:55"
+  topic:
+  topic_other:
+  description: |-
+
+
+- title: "懇親会(近日受付開始)"
+  speaker:
+  room: "AB"
+  time: "120min"
+  start_time: "18:00"
+  end_time: "20:00"
+  topic:
+  topic_other:
+  description: |-
