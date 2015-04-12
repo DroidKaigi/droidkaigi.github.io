@@ -3,7 +3,13 @@ DroidKaigi Webサイト [![Build Status](https://travis-ci.org/DroidKaigi/droidk
 
 http://droidkaigi.github.io/
 
-<!-- TODO PRで講演内容のアップデートを受け付けることについて説明 -->
+## 【講演者の方へ】講演情報の変更について
+
+Webサイトにて公開している講演内容（タイトル、発表者名など）の変更をPull Requestにて受け付けます。
+
+[/_data/sessions.yml](https://github.com/DroidKaigi/droidkaigi.github.io/blob/master/_data/sessions.yml)を編集し、PRを送って下さい。
+
+※講演時間の調整は、原則行うことが出来ません。止むを得ない場合は、運営スタッフへ直接お問い合わせ下さい。
 
 ## ローカルでの確認方法
 
