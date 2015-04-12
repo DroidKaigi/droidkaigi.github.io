@@ -9,7 +9,7 @@ Webサイトにて公開している講演内容（タイトル、発表者名�
 
 [/_data/sessions.yml](https://github.com/DroidKaigi/droidkaigi.github.io/blob/master/_data/sessions.yml)を編集し、PRを送って下さい。
 
-※講演時間の調整については、運営スタッフへ直接お問い合わせ下さい。
+※講演時間の調整は、原則行うことが出来ません。止むを得ない場合は、運営スタッフへ直接お問い合わせ下さい。
 
 ## ローカルでの確認方法
 
