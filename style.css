@@ -352,11 +352,15 @@ ul {
 
 .column2 {
   width: 406px;
-  float: left; }
+  float: left;
+  margin: 0 32px 0 0; }
+  .column2:nth-child(2n) {
+    margin: 0; }
   @media (max-width: 860px) {
     .column2 {
       float: none;
-      width: 100%; } }
+      width: 100%;
+      margin: 0 0 40px 0; } }
 
 .column3 {
   float: left;
