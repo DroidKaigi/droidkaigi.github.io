@@ -553,8 +553,9 @@ header {
 .timetable td {
   padding: 0 8px;
   width: 337px;
-  height: 134px;
-}
+  height: 118px; }
+  .timetable td[rowspan="2"] {
+    height: 252px; }
 @media (max-width: 860px) {
   .room-title {
     font-size: 120%;
@@ -597,6 +598,8 @@ header {
     height: auto;
     margin: 0 0 16px 0;
     padding: 0; }
+    .timetable td[rowspan="2"] {
+      height: auto; }
 }
 
 
@@ -614,9 +617,9 @@ header {
     content: "."; }
 
 .card {
-  margin: 0;
+  margin: 8px 0;
   width: 100%;
-  height: 100%;
+  height: inherit;
   padding: 8px 16px;
   float: left;
   position: relative;
