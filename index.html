@@ -147,6 +147,9 @@ session_times:
                     {% if session.topic_other != null %}({{ session.topic_other | escape }}){% endif %}
                   </p>
                   <h4 class="session-title">{{ session.title | escape }}</h4>
+                  {% if session.title == '懇親会' %}
+                  <p>※参加される方は<a href="http://droidkaigi.connpass.com/event/13884/" target="_blank">事前申し込み</a>をお願いします。</p>
+                  {% endif %}
                   <p class="speaker"><span>{{ session.speaker | escape }}</span>
                   </p>
                   <p class="info">{% if session.room != "AB" %}<span>ROOM:{{ session.room }}</span>{% endif %}<span>{{ session.time | escape }}</span></p>
