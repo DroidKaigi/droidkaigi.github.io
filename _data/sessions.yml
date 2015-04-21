@@ -57,7 +57,7 @@
     非同期処理のコールバックでFragmentTransactionを伴う処理でのクラッシュなど、Android開発者が1度は陥ったことのあると思われる実例を挙げながら、クラッシュしづらいAndroidアプリについて考察します。
 
 - title: "ゲームアプリケーションのアップデートサイクル"
-  speaker: "@iizukak"
+  speaker: "飯塚健太郎(@iizukak) "
   room: "B"
   time: "25min"
   start_time: "11:30"
