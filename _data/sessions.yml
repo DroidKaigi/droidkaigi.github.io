@@ -436,8 +436,8 @@
     対象は Android を使用した製品の開発者や Android のカスタマイズを趣味等で行っている開発者を想定しています。
     Android 5.0 からは一般の Android アプリケーションに対してもセキュリティポリシーの定義が有効になっているので、アプリケーション開発者も知っていると良いかもしれません。
 
-- title: "Android fireside chat"
-  speaker: "あんざいゆき, 長澤 太郎 (@ngsw_taro), ninjinkun, yuki930, Nkzn"
+- title: "Fireside Chat"
+  speaker: "司会：mhidaka, スピーカー：あんざいゆき, 長澤 太郎 (@ngsw_taro), ninjinkun, yuki930, Nkzn"
   room: "A"
   time: "25min"
   start_time: "17:30"
@@ -445,7 +445,8 @@
   topic:
   topic_other:
   description: |-
-
+    セッションスピーカーによるファイヤーサイドチャットです。暖炉の前でくつろいでいるように、開発者の本音が聞けるセッションです。
+    会場からの質問も受け付けます。日頃の疑問、Androidアプリ開発の苦労、おすすめのライブラリ、流行りそうな技術、ざっくばらんに話します！
 
 - title: "配置変更"
   speaker:
