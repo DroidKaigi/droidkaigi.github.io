@@ -6,6 +6,7 @@
   end_time: "10:50"
   topic: "基調講演"
   topic_other: "開発テクニック"
+  slide_url: "http://www.slideshare.net/yanzm/droid-kaigi2015-yanzm"
   description: |-
     正しく使えば便利なFragmentですが、落とし穴もたくさんあります。
     どういうところで利用すればいいのか。どのようにFragmentを利用すればはまらないのか。
@@ -20,6 +21,7 @@
   end_time: "11:25"
   topic: "メンテナンス"
   topic_other:
+  slide_url: "http://www.slideshare.net/TakaoSumitomo/ss-47393000"
   description: |-
     ■概要
     Androidアプリケーション開発でテストコードが無い状態から書き始めるまでにどのようなことを行うかをお話しします。
@@ -39,6 +41,7 @@
   end_time: "11:25"
   topic: "その他"
   topic_other: "VR"
+  slide_url: "http://www.slideshare.net/KenichiTakahashi2/cardboardux-droidkaigi-2"
   description: |-
     Cardboard SDK と OpenCV を使って、指で中のものを動かせるVRを実現するお話しです。
     Cardboard を使うとAndroid端末で手軽にVRの世界を実現出来ますが、せっかく端末にはタッチパネルがあるのにそこが触れなくなってUXが損なわれるのがイマイチだなと思っておりました。マグネットのスイッチが付いてはいるものの何かのトリガー程度にしか使えません。しかし、Cardboard のカメラが当たる部分は「どうぞ使ってください」と言わんばかりにくり抜かれています。そこでカメラの前に指をかざしてVRの中にあるオブジェクトを操作できないかと考えて奮闘した記録をお話ししたいと思います。
@@ -51,6 +54,7 @@
   end_time: "11:55"
   topic: "メンテナンス"
   topic_other:
+  slide_url: "http://www.slideshare.net/fumihikoshiroyama/ss-47472394"
   description: |-
     なぜあなたのAndroidアプリはクラッシュするのでしょうか。Androidで最も重要な概念はライフサイクルと非同期処理に関する厳密な理解です。何を当たり前のことをと言われそうですが、実に多くの方がこのことを本当に理解しているのか疑わしいコードを書いてしまいます。
     ActivityやFragmentのライフサイクルと陥りやすい罠、よく利用される非同期処理ライブラリであるAsyncTaskとLoaderの違いと使いどころ、Serviceからのコールバックなどを通じて、いくつかのタブーを犯さないようにするとアプリは驚くほど安定します。
@@ -64,6 +68,7 @@
   end_time: "11:55"
   topic: "メンテナンス"
   topic_other:
+  slide_url: "http://www.slideshare.net/kentaroiizuka/droidkaigi"
   description: |-
     ■概要
     数百万人規模のユーザを抱えるゲームアプリの開発・アップデートを担当するエンジニアが，アプリのアップデートサイクルの実際をお話します．
@@ -95,6 +100,7 @@
   end_time: "13:00"
   topic:
   topic_other:
+  slide_url:
   description: |-
 
 
@@ -106,6 +112,7 @@
   end_time: "13:25"
   topic: "メンテナンス"
   topic_other:
+  slide_url: "https://speakerdeck.com/chocomelonchan/droidkaigi"
   description: |-
     アプリを企画、リリースに至るまでの話をします。
     エンジニアが中心となってブレインストーミングから始め、その後のプロトタイプ、本番コードの実装、リリースに至るまでに得られたアプリ開発の知見を共有します。
@@ -141,6 +148,7 @@
   end_time: "13:25"
   topic: "開発環境・ツール"
   topic_other:
+  slide_url: "http://www.slideshare.net/hiroyukikusu/droidkaigi2015androidmvc"
   description: |-
     初学者に嬉しい、実際に使ってみて良かった、開発を楽するためのツールについて紹介します。
     ・Android Studio プラグイン
@@ -162,6 +170,7 @@
   end_time: "13:55"
   topic: "メンテナンス"
   topic_other:
+  slide_url: "https://speakerdeck.com/misyobun/da-rong-liang-detafalsedaunrodozhan-lue"
   description: |-
     みなさんは、アプリから大容量のデータをダウンロードする際どのように実現しているでしょうか？
     まず最初に思い浮かべるのはDownloadManagerの利用かと思います。
@@ -177,6 +186,7 @@
   end_time: "13:55"
   topic: "その他"
   topic_other: "初心者・ナレッジ共有"
+  slide_url: "http://www.slideshare.net/shinobuokano7/android-47395733"
   description: |-
     対象者 : 初心者から中級者、どのようにAndroidの情報収集してるのか気になる人
 
@@ -206,6 +216,7 @@
   end_time: "14:25"
   topic: "Android の最新動向"
   topic_other:
+  slide_url: "http://www.slideshare.net/kmt-t/art-47396171"
   description: |-
     2015年2月現在、ARTのコードは日々更新されています。
     KitKatの時代からのARTのコードの進化とDalvik仮想マシンとの違いについて発表します。AOTコンパイラとGC、できればJNIについて話そうと思っています。
@@ -218,6 +229,7 @@
   end_time: "14:25"
   topic: "開発環境・ツール"
   topic_other:
+  slide_url: "https://speakerdeck.com/ntaro/xin-yan-yu-kotlindeandroidpuroguramingu-number-droidkaigi"
   description: |-
     ■趣旨
     あのJake Whartonも注目するAndroidのSwiftと名高いKotlinを紹介します！
@@ -260,6 +272,7 @@
   end_time: "14:55"
   topic: "Android の最新動向"
   topic_other:
+  slide_url: "https://speakerdeck.com/haru067/artfalsememoriguan-li"
   description: |-
     Android 5.0では，ARTという新しいランタイムがDalvik VMに替わって搭載されました．
     ARTはDalvik VMと比べてメモリ管理で多くの変更があり，マルチコアCPUに向けた並列GCや，並行メモリ割当てに対応した独自のメモリアロケータ，世代別GCなどが新たに実装されています．
@@ -283,6 +296,7 @@
   end_time: "14:55"
   topic: "ハードウェア"
   topic_other:
+  slide_url: "https://speakerdeck.com/wasabeef/android-bitmaphabu-kunai"
   description: |-
     ■ 対象者
      エンジニア中級者〜上級者
@@ -312,6 +326,7 @@
   end_time: "15:25"
   topic: "開発環境・ツール"
   topic_other:
+  slide_url: "http://www.slideshare.net/MakotoYamazaki/20150425-droidkaigi-gradle"
   description: |-
     Android アプリケーションの開発環境が Eclipse から Android Studio に移り変わりつつあります。Android Studio ではプロジェクトの構成管理に Gradle を採用しているため、Gradle の機能を使うことでさまざまなカスタマイズを行うことが出来ます。
 
@@ -325,6 +340,7 @@
   end_time: "15:25"
   topic: "ハードウェア"
   topic_other:
+  slide_url: "http://www.slideshare.net/suguruoho/droid-kaigi"
   description: |-
     AndroidWearなどの電力を考慮した開発が必要だったり、長く遊んでもらうために電力消費を少なくしたいゲーム開発者に向けたないようになります。
     Androidなどのモバイル端末において、電力消費を簡単かつ安価（数千円）に数十msの時間解像度でモニタリングするために、電力計とArduinoを組み合わせた計測装置を作成。
@@ -338,6 +354,7 @@
   end_time: "16:20"
   topic: "メンテナンス"
   topic_other:
+  slide_url: "http://www.taosoftware.co.jp/blog/2015/04/cf5c5d90.html"
   description: |-
     セキュリティホールがあるアプリケーションをを作らないようにするために、やりがちな例をあげながら、その対応策について解説致します。
     また、不正のないアプリがマルウェアに間違われる事、他人の作成したライブラリを使用したために、意図せずマルウェアになってしまう事もあります。
@@ -353,6 +370,7 @@
   end_time: "15:55"
   topic: "デザイン・UI"
   topic_other:
+  slide_url: "https://speakerdeck.com/yulily100/tesainakaxmlwoshu-kuahurikai-fa-huro"
   description: |-
     アプリの開発時、デザイナーとのやりとりをどのように行っているでしょうか？
     おそらくグラフィックツールで作成したスクリーンショットをやりとりしていることが多いと思います。
@@ -374,6 +392,7 @@
   end_time: "16:25"
   topic: "デザイン・UI"
   topic_other:
+  slide_url: "https://speakerdeck.com/androhi/jellybeantokitkatdeshi-xian-surumateriarudezain"
   description: |-
     Android5.0から採用されたマテリアルデザインですが、Android5.xとAndroid4.xで同じように実装することが出来ません。原因としては、Android5.xからしか使えないAPIやAttributesが多く存在し、それがマテリアルデザインの実装の根幹に関わっているためです。後方互換としてSupportLibraryを使用することで、ToolbarやRecyclerView/CardViewといった代表的なUIは、ほぼ同じように使えるようになっています。
     ところが、マテリアルデザインのガイドラインを参考にアプリを開発していくと、様々なUIでカスタマイズが必要になってきます。とりわけAndroid4.x(JellyBean/KitKat)では、それが顕著に現れます。
@@ -387,6 +406,7 @@
   end_time: "17:20"
   topic: "デザイン・UI"
   topic_other:
+  slide_url: "http://www.slideshare.net/yuki930/ss-47398513"
   description: |-
     フリマアプリFrilのデザインリニューアル（Google Play Best App 2014受賞）を事例として、Material Designをどのようにアプリに組み込むかについて、デザイナーとエンジニア両名で発表します。以下のトピックについてお話しする予定です。
 
@@ -410,6 +430,7 @@
   end_time: "16:55"
   topic: "開発環境・ツール"
   topic_other:
+  slide_url: "http://www.slideshare.net/Nkzn/ss-47398311"
   description: |-
     ユーザーがどんな場所にアプリを持っていこうと、私達はそれを制止できません。自分たちのWebサービスを携帯網もWi-Fiもない場所でも使ってほしいと思ったとき、私たち開発者には何ができるでしょうか。
     GmailアプリやEvernoteアプリのように、オフライン時に閲覧・作成・編集されたデータをサーバーと同期させるための仕組みが、Androidには用意されています。
@@ -424,6 +445,7 @@
   end_time: "17:25"
   topic: "Android の最新動向"
   topic_other:
+  slide_url: "http://www.slideshare.net/sola1980/androidse-linux"
   description: |-
     Android 4.4 から有効化された SELinux は Android 5.0 で適用範囲が拡大されています。
 
@@ -444,6 +466,7 @@
   end_time: "17:55"
   topic:
   topic_other:
+  slide_url:
   description: |-
     セッションスピーカーによるファイヤーサイドチャットです。暖炉の前でくつろいでいるように、開発者の本音が聞けるセッションです。
     会場からの質問も受け付けます。日頃の疑問、Androidアプリ開発の苦労、おすすめのライブラリ、流行りそうな技術、ざっくばらんに話します！
@@ -456,6 +479,7 @@
   end_time: "17:55"
   topic:
   topic_other:
+  slide_url:
   description: |-
 
 
@@ -467,4 +491,5 @@
   end_time: "20:00"
   topic:
   topic_other:
+  slide_url:
   description: |-
