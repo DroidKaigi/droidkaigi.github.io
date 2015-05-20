@@ -142,10 +142,12 @@ session_times:
                 {% if session.time == "50min" and session.room != "AB" %}{% assign rowspan = 2 %}{% endif %}
               <td colspan="{{ colspan }}" rowspan="{{ rowspan }}">
                 <div class="card {% if forloop.first %}card-first{% endif %}">
+                  <!--
                   <p class="topic">
                     {{ session.topic | escape }}
                     {% if session.topic_other != null %}({{ session.topic_other | escape }}){% endif %}
                   </p>
+                -->
                   <h4 class="session-title">{{ session.title | escape }}</h4>
                   {% if session.title == '懇親会' %}
                   <p>※参加される方は<a href="http://droidkaigi.connpass.com/event/13884/" target="_blank">事前申し込み</a>をお願いします。</p>
