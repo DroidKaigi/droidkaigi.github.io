@@ -154,8 +154,9 @@ session_times:
                   {% endif %}
                   <p class="speaker"><span>{{ session.speaker | escape }}</span>
                   </p>
-                  <p><a href="">資料</a></p>
                   <p class="info">{% if session.room != "AB" %}<span>ROOM:{{ session.room }}</span>{% endif %}<span>{{ session.time | escape }}</span></p>
+                  {% if session.slide_url != null %}
+                  <p class="slide"><a href="{{ session.slide_url | escape }}" target="_blank">資料</a></p>{% endif %}
                 </div>
               </td>
               {% endif %}{% endfor %}
