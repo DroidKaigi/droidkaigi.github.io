@@ -577,7 +577,7 @@ header {
   }
   .info {
     display: block;
-    margin: 12px 0 8px 0;
+    margin: 4px 0 12px 0;
   }
   .info span {
     background: #e6e6e6;
@@ -643,7 +643,7 @@ header {
   border-radius: 2px; }
 
 .session-title {
-  margin: 0 0 .2em 0;
+  margin: 8px 0 .2em 0;
   line-height: 1.2;
   max-height: 38px;
   overflow:hidden;
@@ -655,6 +655,10 @@ header {
   margin: 0;
   color: #757575;
   font-size: 80%; }
+
+.slide {
+  margin: 8px 0;
+}
 
 .form-title {
   font-size: 85%;
@@ -668,6 +672,7 @@ header {
   padding: 30px 0 0 0;
 }
 footer {
+  margin: 80px 0 0 0;
   background: #8bc34a; }
 
 .footer-inner {

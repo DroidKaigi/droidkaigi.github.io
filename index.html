@@ -53,7 +53,7 @@ session_times:
       <h1 class="page-title">
         <img src="images/droidkun.png" alt="welcome to DroidKaigi" class="main-image">
         DroidKaigi</h1>
-      <p class="page-description">DroidKaigiは、エンジニアが主役の<br class="for-sp">Androidカンファレンスです</p>
+      <p class="page-description">DroidKaigiは終了しました。<br class="for-sp">ご来場ありがとうございました！</p>
         <ul class="day-place">
           <li><span class="note">Day</span>2015/04/25(Sat)</li>
           <li><span class="note">Place</span>CyberAgent, Inc.</li>
@@ -78,7 +78,7 @@ session_times:
         <a href="http://connpass.com/event/13216" class="btn-floating" target="_blank">
           <img src="images/register.svg" alt="register">
         </a>
-        <p class="baloon">申し込みは終了しました</p>
+        <p class="baloon">参加登録ページを見る</p>
     </div>
   </header>
 
@@ -109,11 +109,11 @@ session_times:
             </li>
             <li id="registration" class="column3">
               <div class="icon-image">
-                <img src="images/plus.svg" alt="" class="plus icon">
+                <img src="images/document.svg" alt="" class="plus icon">
               </div>
-              <h3 class="details-title">Entry</h3>
-              <p class="description">申し込みは終了しました。<br>800名に渡るご応募、ありがとうございました。</p>
-              <a href="http://connpass.com/event/13216" class="btn" target="_blank">申し込む</a>
+              <h3 class="details-title">Questionnaire</h3>
+              <p class="description">DroidKaigiではカンファレンスに関するアンケートを実施しました。<br>ご回答ありがとうございました。</p>
+              <a href="https://docs.google.com/forms/d/12kTV7J_UxZeQS3WlvByMaPYLDTWiWUxVXVppDvgtEyM/viewanalytics" class="btn" target="_blank">結果を見る</a>
             </li>
           </ul>
         </section>
@@ -142,10 +142,12 @@ session_times:
                 {% if session.time == "50min" and session.room != "AB" %}{% assign rowspan = 2 %}{% endif %}
               <td colspan="{{ colspan }}" rowspan="{{ rowspan }}">
                 <div class="card {% if forloop.first %}card-first{% endif %}">
+                  <!--
                   <p class="topic">
                     {{ session.topic | escape }}
                     {% if session.topic_other != null %}({{ session.topic_other | escape }}){% endif %}
                   </p>
+                -->
                   <h4 class="session-title">{{ session.title | escape }}</h4>
                   {% if session.title == '懇親会' %}
                   <p>※参加される方は<a href="http://droidkaigi.connpass.com/event/13884/" target="_blank">事前申し込み</a>をお願いします。</p>
@@ -153,6 +155,8 @@ session_times:
                   <p class="speaker"><span>{{ session.speaker | escape }}</span>
                   </p>
                   <p class="info">{% if session.room != "AB" %}<span>ROOM:{{ session.room }}</span>{% endif %}<span>{{ session.time | escape }}</span></p>
+                  {% if session.slide_url != null %}
+                  <p class="slide"><a href="{{ session.slide_url | escape }}" target="_blank">資料</a></p>{% endif %}
                 </div>
               </td>
               {% endif %}{% endfor %}
@@ -238,11 +242,8 @@ session_times:
           <h2 class="section-title">Goods</h2>
           <h3 class="form-title">オフィシャルTシャツ</h3>
           <p class="description">
-            DroidKaigiオフィシャルTシャツを販売しています。<br>
-            当日は是非これを着て会場にお越しください。
-          </p>
-          <p class="description"><a href="http://ec-mail.freegufo.com/items/1430197" target="_blank">FreeGufo様の販売ページ</a></p>
-          <p class="description">Tシャツの売上から1枚当たり500円をDroidKaigiの運営費としてご提供いただきます。</p>
+            DroidKaigiオフィシャルTシャツを販売しました。</p>
+          <p class="description">事前販売・会場販売共に、非常にたくさんの方々にご購入いただけました。</p>
         </section>
       </div>
       <div class="row">
@@ -267,14 +268,6 @@ session_times:
         </section>
       </div>
     </div>
-    <section class="register">
-      <div class="register-inner container-inner">
-        <h2 class="section-title">Register</h2>
-        <p>DroidKaigiは、エンジニアが主役の<br class="for-sp">Androidカンファレンスです</p>
-        <p>申し込みは終了しました</p>
-        <p><a href="http://connpass.com/event/13216" class="btn btn-large" target="_blank">申し込む</a></p>
-      </div>
-    </section>
   </div>
   <footer>
     <div class="footer-inner">
