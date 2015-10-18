@@ -352,11 +352,15 @@ ul {
 
 .column2 {
   width: 406px;
-  float: left; }
-  @media (max-width: 700px) {
+  float: left;
+  margin: 0 32px 0 0; }
+  .column2:nth-child(2n) {
+    margin: 0; }
+  @media (max-width: 860px) {
     .column2 {
       float: none;
-      width: 100%; } }
+      width: 100%;
+      margin: 0 0 40px 0; } }
 
 .column3 {
   float: left;
@@ -364,7 +368,7 @@ ul {
   margin: 0 32px 0 0; }
   .column3:nth-child(3n) {
     margin: 0; }
-  @media (max-width: 700px) {
+  @media (max-width: 860px) {
     .column3 {
       float: none;
       width: 100%;
@@ -377,14 +381,21 @@ ul {
 
 .for-sp {
   display: none; }
-  @media (max-width: 700px) {
+  @media (max-width: 500px) {
     .for-sp {
       display: inline; } }
+
+.for-pc {
+  display: initial; }
+  @media (max-width: 500px) {
+    .for-pc {
+      display: none; } }
 
 header {
   background: #8bc34a;
   text-align: center;
-  color: #fff; }
+  color: #fff;
+}
 
 .header-inner {
   max-width: 844px;
@@ -458,14 +469,21 @@ header {
 .container-inner {
   max-width: 844px;
   margin: 0 auto; }
-  @media (max-width: 700px) {
+    @media (max-width: 860px) {
     .container-inner {
+      width: 500px;
+      margin: 0 auto;
+    }
+  }
+  @media (max-width: 450px) {
+    .container-inner {
+      width: auto;
       padding: 0 15px; } }
 
 .section-title {
   color: #8bc34a;
   font-weight: normal;
-  font-size: 212%;
+  font-size: 270%;
   margin: 0 0 .5em 0; }
 
 .details-contents {
@@ -500,14 +518,91 @@ header {
   color: #757575;
   margin: 0 0 .5em; }
 
-.timetable td {
-  width: 300px; }
+#sessions {
+  margin-right: -8px;
+}
 @media (max-width: 700px) {
+  #sessions {
+    margin-right: 0;
+  }
+}
+
+/* タイムテーブル */
+.timetable td.room-title-container {
+  height: auto;
+}
+.room-title {
+  text-align: center;
+  color: #8bc34a;
+  font-size: 140%;
+  margin: 16px 0;
+}
+.room-title-sp {
+  display: none;
+}
+.info {
+  display: none;
+}
+.timetable table {
+  width: 100%;
+}
+.timetable th {
+  width: 150px;
+  color: #757575;
+}
+.timetable td {
+  padding: 0 8px;
+  width: 337px;
+  height: 118px; }
+  .timetable td[rowspan="2"] {
+    height: 252px; }
+@media (max-width: 860px) {
+  .room-title {
+    font-size: 120%;
+    margin: 8px 0;
+  }
+  .timetable td {
+    width: 208px;
+  }
+}
+
+@media (max-width: 520px) {
+  .room-title {
+    display: none;
+  }
+  .room-title-sp {
+    display: inline;
+    color: #8bc34a;
+    margin: 0 5px 0 0;
+  }
+  .info {
+    display: block;
+    margin: 4px 0 12px 0;
+  }
+  .info span {
+    background: #e6e6e6;
+    color: #999;
+    margin: 0 4px 0 0;
+    padding: 2px 8px;
+    display: inline-block;
+    border-radius: 13px;
+    font-size: 80%;
+  }
   .timetable th {
-    display: block; }
+    display: block;
+    width: 100%;
+    padding: 12px 0 8px }
   .timetable td {
     display: block;
-    width: 100%; } }
+    width: 100%;
+    height: auto;
+    margin: 0 0 16px 0;
+    padding: 0; }
+    .timetable td[rowspan="2"] {
+      height: auto; }
+}
+
+
 
 .session-list {
   display: block;
@@ -522,33 +617,33 @@ header {
     content: "."; }
 
 .card {
-  margin: 0 16px 16px 0;
-  width: 270px;
-  height: 118px;
-  padding: 16px;
+  margin: 8px 0;
+  width: 100%;
+  height: inherit;
+  padding: 8px 16px;
   float: left;
   position: relative;
   box-sizing: border-box;
   border-radius: 2px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3); }
   .card:nth-child(3n) {
     margin: 0 0 16px 0; }
-  @media (max-width: 700px) {
+  @media (max-width: 860px) {
     .card {
-      float: none;
-      width: 100%; } }
+      float: none;} }
 
+.card-first {
+  max-width: inherit;
+}
 .topic {
   display: inline-block;
-  margin: 0 0 .5em 0;
-  padding: 0 4px;
-  color: #fff;
-  background: #00bcd4;
-  font-size: 75%;
+  margin: 8px 0 .5em 0;
+  color: #00bcd4;
+  font-size: 80%;
   border-radius: 2px; }
 
 .session-title {
-  margin: 0 0 .5em 0;
+  margin: 8px 0 .2em 0;
   line-height: 1.2;
   max-height: 38px;
   overflow:hidden;
@@ -561,17 +656,23 @@ header {
   color: #757575;
   font-size: 80%; }
 
+.slide {
+  margin: 8px 0;
+}
+
 .form-title {
   font-size: 85%;
   margin: 1.5em 0 .7em; }
 
 .register {
-  border-top: 1px solid #ccc;
   text-align: center;
-  padding: 30px 0 0 0;
   margin: 50px 0 60px; }
-
+.register-inner {
+  border-top: 1px solid #ccc;
+  padding: 30px 0 0 0;
+}
 footer {
+  margin: 80px 0 0 0;
   background: #8bc34a; }
 
 .footer-inner {
@@ -596,6 +697,11 @@ small {
   list-style: none;
   text-align: center;
   margin: 15px 0 0 0; }
+  @media (max-width: 500px) {
+    .list-inline {
+      height: 52px;
+    }
+  }
   .list-inline li {
     display: inline-block;
     padding-right: 5px;
