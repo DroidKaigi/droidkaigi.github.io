@@ -1,24 +1,8 @@
 ---
 # jekyllのためのYAML front matterブロック
-session_times:
-  - "10:00 - 11:00"
-  - "11:00 - 11:25"
-  - "11:30 - 11:55"
-  - "12:00 - 13:00"
-  - "13:00 - 13:25"
-  - "13:30 - 13:55"
-  - "14:00 - 14:25"
-  - "14:30 - 14:55"
-  - "15:00 - 15:25"
-  - "15:30 - 15:55"
-  - "16:00 - 16:25"
-  - "16:30 - 16:55"
-  - "17:00 - 17:25"
-  - "17:30 - 17:55"
-  - "18:00 - 20:00"
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -26,258 +10,35 @@ session_times:
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="m-HFoLiYLM1c8u1drvacPa7ZdWaIL9o1BZkyiuUsGQg" />
 
-  <title>DroidKaigi | 2015/04/25</title>
+  <title>DroidKaigi</title>
 
-  <meta name="description" content="DroidKaigiは、エンジニアが主役のAndroidカンファレンスです。 Android技術情報の共有とコミュニケーションを目的に2015/4/25(土)に開催します。"/>
+  <meta name="description" content="DroidKaigiは、エンジニアが主役のAndroidカンファレンスです。"/>
 
   <!-- OpenGraph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="DroidKaigi | 2015/04/25" />
+  <meta property="og:title" content="DroidKaigi" />
   <meta property="og:site_name" content="DroidKaigi" />
   <meta property="og:image" content="http://droidkaigi.github.io/images/droidkun.png" />
   <meta property="og:url" content="http://droidkaigi.github.io/" />
-  <meta property="og:description" content="DroidKaigiは、エンジニアが主役のAndroidカンファレンスです。 Android技術情報の共有とコミュニケーションを目的に2015/4/25(土)に開催します。" />
+  <meta property="og:description" content="DroidKaigiは、エンジニアが主役のAndroidカンファレンスです。" />
 
   <link rel="canonical" href="http://droidkaigi.github.io/"/>
   <link rel="shortcut icon" href="images/favicon.png">
-  <link rel="stylesheet" href="style.css">
-  <!--[if lt IE 9]>
-    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
-    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
 
+	<script>
+  (function(){
+    // Force HTTPS, Redirect to latest page.
+    var host = "droidkaigi.github.io", protocol = "https:";
+    if (location.host === host) {
+      if (location.protocol !== protocol) {
+        location.protocol = protocol;
+      } else {
+        location.pathname = "/2016/";
+      }
+    }
+  })();
+  </script>
 </head>
 <body>
-  <header>
-    <div class="header-inner">
-      <h1 class="page-title">
-        <img src="images/droidkun.png" alt="welcome to DroidKaigi" class="main-image">
-        DroidKaigi</h1>
-      <p class="page-description">DroidKaigiは終了しました。<br class="for-sp">ご来場ありがとうございました！</p>
-        <ul class="day-place">
-          <li><span class="note">Day</span>2015/04/25(Sat)</li>
-          <li><span class="note">Place</span>CyberAgent, Inc.</li>
-        </ul>
-        <p class="organize">主催：DroidKaigi実行委員会<br class="for-sp">（責任者 mhidaka ）</p>
-        <ul class="list-inline dk-socials">
-          <li style="position:relative;top:-5px;">
-            <div class="fb-like" data-share="true" data-layout="button_count" data-width="100" data-show-faces="false" data-href="http://droidkaigi.github.io/"></div>
-          </li>
-          <li>
-            <a href="http://b.hatena.ne.jp/entry/http://droidkaigi.github.io/" class="hatena-bookmark-button" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加">
-              <img src="//b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
-            </a>
-          </li>
-          <li>
-            <div class="g-plusone" data-size="medium"></div>
-          </li>
-          <li>
-            <a href="https://twitter.com/share" class="twitter-share-button" data-text="DroidKaigi | 2015/04/25" data-url="http://droidkaigi.github.io/" data-hashtags="droidkaigi" data-lang="ja">ツイート</a>
-          </li>
-        </ul>
-        <a href="http://connpass.com/event/13216" class="btn-floating" target="_blank">
-          <img src="images/register.svg" alt="register">
-        </a>
-        <p class="baloon">参加登録ページを見る</p>
-    </div>
-  </header>
-
-  <div class="container">
-    <div class="container-inner">
-      <div class="row">
-        <section id="details" class="details">
-          <h2 class="section-title">Details</h2>
-          <ul class="details-contents">
-            <li class="column3">
-              <div class="icon-image">
-                <img src="images/flag.svg" alt="" class="icon">
-              </div>
-              <h3 class="details-title">About</h3>
-              <p class="description">DroidKaigiは、エンジニアが主役のAndroidカンファレンスです。有志によって主催し、Android技術情報の共有とコミュニケーションを目的に開催します。</p>
-              <p class="description">Androidの利用シーンは多岐に渡り、一人ではとてもカバーしきれません。カンファレンスを通して業界全体で知見を共有し、より良いソフトウェア開発に繋げていきましょう。</p>
-              <p class="description">ハッシュタグ：<a href="https://twitter.com/search?q=%23DroidKaigi">#droidkaigi</a></p>
-            </li>
-            <li id="date" class="column3">
-              <div class="icon-image">
-                <img src="images/calendar.svg" alt="" class="icon">
-              </div>
-              <h3 class="details-title">Day &amp; Place</h3>
-              <p class="description">Day : 2015/4/25 Sat 10:00〜18:00</p>
-              <p class="description">Place : CyberAgent, Inc.</p>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3241.7768166466412!2d139.69806599999998!3d35.657869999999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b563a2365ab%3A0x11f98d568e46cae3!2z5riL6LC344Oe44O844Kv44K344OG44Kj!5e0!3m2!1sja!2sjp!4v1426425268598" width="100%" height="150" frameborder="0" style="border:0"></iframe>
-              <p class="description"><a href="http://frontrend.github.io/blog/shibuya-markcity/" target="_blank">会場への行き方</a></p>
-            </li>
-            <li id="registration" class="column3">
-              <div class="icon-image">
-                <img src="images/document.svg" alt="" class="plus icon">
-              </div>
-              <h3 class="details-title">Questionnaire</h3>
-              <p class="description">DroidKaigiではカンファレンスに関するアンケートを実施しました。<br>ご回答ありがとうございました。</p>
-              <a href="questionnaire.html" class="btn" target="_blank">結果を見る</a>
-            </li>
-          </ul>
-        </section>
-      </div>
-      <div id="sessions" class="row">
-        <section class="timetable">
-          <h2 class="section-title">Sessions</h2>
-          <p class="description">2トラック構成、10〜20セッションを予定しています。<br>
-            基調講演、タイムテーブルなど決まり次第、本サイトで発信していきます。<br>
-            以下セッションの詳細については、<a href="https://docs.google.com/spreadsheets/d/186-gpTHPvGwtQTFqvuSs10Tz3ca49gKNZ7uoRSi2HnE/edit?usp=sharing" target="_blank">DroidKaigi 2015 応募されたトーク一覧</a>もご覧ください。</p>
-
-          <table>
-            <tr>
-              <th></th>
-              <td class="room-title-container"><p class="room-title">ROOM:A</p></td>
-              <td class="room-title-container"><p class="room-title">ROOM:B</p></td>
-            </tr>
-            {% for session_time in page.session_times %}
-            <tr>
-              {% assign start_time = session_time | split:' - ' | first %}
-              {% assign end_time = session_time | split:' - ' | last %}
-              <th>{{ start_time }} - <span class="for-pc">{{ end_time }}</span></th>
-              {% for session in site.data.sessions %}{% if session.start_time == start_time %}
-                {% assign colspan = session.room | size %}
-                {% assign rowspan = 1 %}
-                {% if session.time == "50min" and session.room != "AB" %}{% assign rowspan = 2 %}{% endif %}
-              <td colspan="{{ colspan }}" rowspan="{{ rowspan }}">
-                <div class="card {% if forloop.first %}card-first{% endif %}">
-                  <!--
-                  <p class="topic">
-                    {{ session.topic | escape }}
-                    {% if session.topic_other != null %}({{ session.topic_other | escape }}){% endif %}
-                  </p>
-                -->
-                  <h4 class="session-title">{{ session.title | escape }}</h4>
-                  {% if session.title == '懇親会' %}
-                  <p>※参加される方は<a href="http://droidkaigi.connpass.com/event/13884/" target="_blank">事前申し込み</a>をお願いします。</p>
-                  {% endif %}
-                  <p class="speaker"><span>{{ session.speaker | escape }}</span>
-                  </p>
-                  <p class="info">{% if session.room != "AB" %}<span>ROOM:{{ session.room }}</span>{% endif %}<span>{{ session.time | escape }}</span></p>
-                  {% if session.slide_url != null %}
-                  <p class="slide"><a href="{{ session.slide_url | escape }}" target="_blank">資料</a></p>{% endif %}
-                </div>
-              </td>
-              {% endif %}{% endfor %}
-            </tr>
-            {% endfor %}
-          </table>
-
-          <!-- {% unless page %} 表示確認のため残してある。レンダリング時には消える。 -->
-          <table>
-            <tr>
-              <th></th>
-              <td class="room-title-container"><p class="room-title">ROOM:A</p></td>
-              <td class="room-title-container"><p class="room-title">ROOM:B</p></td>
-            </tr>
-            <tr>
-              <th>10:00 - 11:00</th>
-              <td colspan="2">
-                <div class="card card-first">
-                  <p class="topic">基調講演</p>
-                  <h4 class="session-title">Fragmentではまらないためのあれこれ</h4>
-                  <p class="speaker">ynzm</p>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <th>11:00 - 11:25</th>
-              <td>
-                <div class="card">
-                  <p class="topic">メンテナンス</p>
-                  <h4 class="session-title">開発を効率的に進めるられるまでの道程</h4>
-                  <p class="speaker"><span class="room-title-sp">ROOM:A</span>@cattaka_net</p></td>
-                </div>
-              <td>
-                <div class="card">
-                  <p class="topic">その他(VR)</p>
-                  <h4 class="session-title">CardboardのUXをカメラで向上する (VR)</h4>
-                  <p class="speaker"><span class="room-title-sp">ROOM:B</span>高橋憲一</p>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <th>11:30 - 11:55</th>
-              <td>
-                <div class="card">
-                  <p class="topic">メンテナンス</p>
-                  <h4 class="session-title">絶対落ちないアプリの作り方</h4>
-                  <p class="speaker"><span class="room-title-sp">ROOM:A</span>白山　文彦</p>
-                </div>
-              </td>
-              <td>
-                <div class="card">
-                  <p class="topic">メンテナンス</p>
-                  <h4 class="session-title">ゲームアプリケーションのアップデートサイクル</h4>
-                  <p class="speaker"><span class="room-title-sp">ROOM:B</span>@iizukak</p>
-                </div>
-              </td>
-            </tr>
-          </table>
-          <!-- {% endunless %} -->
-
-        </section>
-      </div>
-      <div class="row">
-        <section id="faq" class="faq column3">
-          <h2 class="section-title">FAQ</h2>
-          <p class="description">Q: DroidKaigiは他のAndroidイベントと何が異なるのですか</p>
-          <p class="description">A: Androidを扱う「開発者」の情報共有を目的としたイベントです。Androidに関連していても、企業の製品紹介などマーケティングと判断したセッションはCFPの段階でお断りします。</p>
-          <h3 class="form-title">お気軽にお問い合わせください :)</h3>
-          <p class="description">Call For Papersに関するお問い合わせ：<br>
-            <a href="https://github.com/DroidKaigi/Questions/" target="_blank">お問い合わせissue用GitHubリポジトリ</a>
-          </p>
-          <p class="description">その他のお問い合わせ：<br>
-            <a href="https://docs.google.com/forms/d/1jQD2tA7q5Z32XKO5nkXVdq53LfPUsWWUgjyyA_KoGGE/viewform" target="_blank">お問い合わせフォーム</a>
-          </p>
-        </section>
-        <section id="team" class="team column3">
-          <h2 class="section-title">Team</h2>
-          <p class="description">DroidKaigi 実行委員会は、Android開発者有志による組織です。</p>
-          <p class="description">代表:<a href="https://github.com/mhidaka" target="_blank"> mhidaka</a></p>
-          <p class="description"><a href="https://github.com/orgs/DroidKaigi/people" target="_blank">DroidKaigi 実行委員会メンバー</a></p>
-        </section>
-        <section class="column3">
-          <h2 class="section-title">Goods</h2>
-          <h3 class="form-title">オフィシャルTシャツ</h3>
-          <p class="description">
-            DroidKaigiオフィシャルTシャツを販売しました。</p>
-          <p class="description">事前販売・会場販売共に、非常にたくさんの方々にご購入いただけました。</p>
-        </section>
-      </div>
-      <div class="row">
-        <section class="column2">
-          <h2 class="section-title">Equipments</h2>
-          <h3 class="form-title">会場内ネットワークについて</h3>
-          <p class="description">
-            会場備え付けのWi-Fi環境がございますが、同時接続数に限りがあります。<br>
-            モバイルルーターの使用に制限は設けておりません。しかし、Wi-Fiテザリングは輻輳により接続が難しくなる場合があるため、他の接続方法もご検討ください。
-          </p>
-          <h3 class="form-title">飲食・ゴミ捨てのルール</h3>
-          <p class="description">飲食は可となっておりますが、場外から持ち込まれたもののゴミは各自お持ち帰り頂けますと幸いです。</p>
-          <h3 class="form-title">電源・コンセントについて</h3>
-          <p class="description">一部の机の裏面に電源タップをご用意しております。この座席は数に限りがあります。</p>
-          <h3 class="form-title">空調について</h3>
-          <p class="description">場内の空調管理は一元管理されております。寒暖を調整できる服装でお越しください。</p>
-        </section>
-        <section class="hashtag column2">
-          <h2 class="section-title">#droidkaigi</h2>
-          <a class="twitter-timeline" href="https://twitter.com/hashtag/DroidKaigi" data-widget-id="577115664244064257" height="400">#droidkaigi のツイート</a>
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-        </section>
-      </div>
-    </div>
-  </div>
-  <footer>
-    <div class="footer-inner">
-      <small>© 2015 DroidKaigi 実行委員会</small>
-      <p class="license">Android is a trademark of Google Inc.The Android robot is reproduced or modified from work created and shared by Google and used according to terms described in the Creative Commons 3.0 Attribution License.</p>
-    </div>
-  </footer>
-
-  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script src="script.js"></script>
-
 </body>
 </html>
