@@ -1,7 +1,4 @@
 # vendor/の下のファイルがJekyllで処理できずエラーになるので除外
 exclude: ['vendor', 'Gemfile', 'Gemfile.lock', 'README.md']
 
-gems:
-  - jekyll-sitemap
-
 timezone: Asia/Tokyo
