@@ -1,15 +1,10 @@
-DroidKaigi Webサイト [![Build Status](https://travis-ci.org/DroidKaigi/droidkaigi.github.io.svg)](https://travis-ci.org/DroidKaigi/droidkaigi.github.io)
+DroidKaigi Webサイト
 ==========================
 
-http://droidkaigi.github.io/
+https://droidkaigi.github.io/
 
-## 【講演者の方へ】講演情報の変更について
-
-Webサイトにて公開している講演内容（タイトル、発表者名など）の変更をPull Requestにて受け付けます。
-
-[/_data/sessions.yml](https://github.com/DroidKaigi/droidkaigi.github.io/blob/master/_data/sessions.yml)を編集し、PRを送って下さい。
-
-※講演時間の調整は、原則行うことが出来ません。止むを得ない場合は、運営スタッフへ直接お問い合わせ下さい。
+このリポジトリはアーカイブです。
+[index.html](index.html)での現行年度サイトへのリダイレクト変更以外で更新を行っていません。
 
 ## ローカルでの確認方法
 
