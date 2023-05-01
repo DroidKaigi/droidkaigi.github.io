@@ -1,4 +1,0 @@
----
-layout: null
----
-{"last_modified":{{site.time | date_to_xmlschema | jsonify}},"sessions":{{ site.data.sessions | jsonify }}}
